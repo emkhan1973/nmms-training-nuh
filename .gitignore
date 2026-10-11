@@ -1,0 +1,9 @@
+# Private: participant mobile numbers and spreadsheet ID. Never commit.
+apps-script/Private.gs
+apps-script/*.tmp
+# Local tooling and OS files
+.claude/
+node_modules/
+.DS_Store
+# First prototype (Claude artifact version), not part of the GitHub Pages site
+nmms-ino-training.html

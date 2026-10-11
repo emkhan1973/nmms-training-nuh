@@ -1,0 +1,9 @@
+{
+  "name": "nmms-ino-training-2026-27",
+  "private": true,
+  "type": "commonjs",
+  "scripts": {
+    "test": "node --test tests/",
+    "preview": "node tests/local-server.js"
+  }
+}

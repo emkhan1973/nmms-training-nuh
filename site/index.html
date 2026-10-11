@@ -1,0 +1,1649 @@
+<!doctype html>
+<html lang="hi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>NMMS INO Training 2026–27 · Nuh</title>
+<meta name="description" content="Training-cum-Workshop for INOs under NMMS Scheme (2026–27), Department of School Education, Nuh, Haryana">
+<meta name="theme-color" content="#0E2766">
+<link rel="preload" as="image" href="assets/nmms-banner.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap">
+<style>
+/* Layout: official strip → full-width banner → navy navigation → breadcrumb → page content in a 1280px column */
+:root{
+  --bg:#F4F6FA; --surface:#FFFFFF; --surface-2:#EEF2F8; --ink:#16213E; --muted:#56637D; --line:#D6DDE9;
+  --navy:#0E2766; --navy-2:#1A3A8F; --on-navy:#FFFFFF; --link:#1A3A8F;
+  --green:#1E7B34; --green-soft:#E3F2E7; --saffron:#E8820C; --saffron-soft:#FDF1E1; --saffron-ink:#8A4B00;
+  --red:#B42318; --red-soft:#FCE8E6; --amber-soft:#FFF6D6; --amber-ink:#7A5A00;
+  --f:"Noto Sans","Noto Sans Devanagari",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  --fh:"Noto Sans Devanagari","Noto Sans",system-ui,sans-serif;
+  --scale:1; --r:10px; --shadow:0 1px 2px rgba(14,39,102,.06),0 2px 8px rgba(14,39,102,.05);
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0C1222; --surface:#141C31; --surface-2:#1B2540; --ink:#E6EBF5; --muted:#9AA6C2; --line:#2A3656;
+  --navy:#0A1C4D; --navy-2:#2D4FB0; --link:#9DB4FF; --green:#5CC77A; --green-soft:#16301F; --saffron:#F5A445;
+  --saffron-soft:#352512; --saffron-ink:#F7C98A; --red:#F2827A; --red-soft:#3A1A19; --amber-soft:#332B10; --amber-ink:#F2D27A;
+  --shadow:none; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0C1222; --surface:#141C31; --surface-2:#1B2540; --ink:#E6EBF5; --muted:#9AA6C2; --line:#2A3656;
+  --navy:#0A1C4D; --navy-2:#2D4FB0; --link:#9DB4FF; --green:#5CC77A; --green-soft:#16301F; --saffron:#F5A445;
+  --saffron-soft:#352512; --saffron-ink:#F7C98A; --red:#F2827A; --red-soft:#3A1A19; --amber-soft:#332B10; --amber-ink:#F2D27A;
+  --shadow:none; color-scheme:dark}
+*{box-sizing:border-box}
+html{font-size:calc(16px * var(--scale));-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--f);line-height:1.55;padding-bottom:env(safe-area-inset-bottom,0px)}
+img{max-width:100%}
+[hidden]{display:none!important}
+h1,h2,h3,h4{line-height:1.25;margin:0;text-wrap:balance}
+a{color:var(--link)}
+button,input,select,textarea{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--saffron);outline-offset:2px}
+.wrap{max-width:1280px;margin:0 auto;padding-inline:16px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+
+/* Official strip */
+.strip{background:var(--navy);color:var(--on-navy);font-size:.82rem;padding-top:env(safe-area-inset-top,0px)}
+.strip-in{display:flex;gap:10px 16px;align-items:center;justify-content:space-between;flex-wrap:wrap;padding-block:6px}
+.strip-title{min-width:0}
+.strip-title b{font-weight:600;display:block}
+.strip-title span{opacity:.85}
+.strip-tools{display:flex;gap:6px;align-items:center;flex-wrap:wrap}
+.conn{font-weight:600;font-size:.75rem;padding:2px 10px;border-radius:99px;background:rgba(255,255,255,.14);white-space:nowrap}
+.conn.ok::before,.conn.off::before{content:"";display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:6px;vertical-align:0}
+.conn.ok::before{background:#5CD07A}.conn.off::before{background:#F5A445}
+.tbtn{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);color:#fff;border-radius:6px;min-height:30px;padding:2px 10px;cursor:pointer;font-weight:600;font-size:.8rem}
+.tbtn:hover{background:rgba(255,255,255,.22)}
+
+/* Banner */
+.banner-wrap{background:#fff;border-bottom:4px solid var(--saffron)}
+.banner{display:block;width:100%;height:auto;max-width:1920px;margin:0 auto;object-fit:contain;aspect-ratio:2048/768}
+.board-row{display:flex;justify-content:flex-end;padding-block:6px}
+.board-btn{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--navy-2);background:var(--navy-2);color:#fff;border-radius:6px;padding:4px 12px;min-height:34px;font-weight:600;font-size:.82rem;cursor:pointer}
+.board-btn:hover{filter:brightness(1.1)}
+
+/* Navigation */
+.nav{background:var(--navy-2);position:sticky;top:0;z-index:30;box-shadow:0 2px 6px rgba(0,0,0,.12)}
+.nav-in{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none}
+.nav-in::-webkit-scrollbar{display:none}
+.nav a{flex:none;color:#fff;text-decoration:none;font-weight:600;font-size:.92rem;padding:12px 14px;border-bottom:3px solid transparent;white-space:nowrap}
+.nav a:hover{background:rgba(255,255,255,.08)}
+.nav a[aria-current="page"]{border-bottom-color:var(--saffron);background:rgba(255,255,255,.1)}
+.nav a.adm{color:#FFD9A6}
+.nav .sp{flex:1}
+.crumbs{list-style:none;display:flex;flex-wrap:wrap;gap:6px;padding:12px 0 0;margin:0;font-size:.85rem;color:var(--muted)}
+.crumbs li+li::before{content:"›";margin-right:6px}
+.crumbs a{text-decoration:none}
+
+main{padding-block:16px 48px;display:grid;gap:18px}
+.page-head{display:flex;justify-content:space-between;gap:12px;align-items:end;flex-wrap:wrap}
+.page-head h1{font-size:1.6rem;color:var(--navy-2)}
+:root[data-theme="dark"] .page-head h1{color:var(--ink)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .page-head h1{color:var(--ink)}}
+.page-head p{margin:4px 0 0;color:var(--muted)}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:18px;box-shadow:var(--shadow);min-width:0}
+.card h2{font-size:1.15rem}
+.muted{color:var(--muted)}
+.small{font-size:.85rem}
+.row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.grid2{display:grid;grid-template-columns:minmax(0,1.7fr) minmax(0,1fr);gap:18px;align-items:start}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;border:1px solid transparent;border-radius:8px;min-height:44px;padding:8px 16px;font-weight:600;cursor:pointer;background:var(--navy-2);color:#fff;text-decoration:none;font-size:.95rem}
+.btn:hover{filter:brightness(1.08)}
+.btn:disabled{opacity:.5;cursor:not-allowed;filter:none}
+.btn.sec{background:var(--surface);color:var(--ink);border-color:var(--line)}
+.btn.sec:hover{background:var(--surface-2)}
+.btn.green{background:var(--green)}
+.btn.saff{background:var(--saffron);color:#1E1300}
+.btn.danger{background:var(--red);color:#fff}
+.btn.lg{min-height:52px;font-size:1.05rem;padding:10px 22px}
+.btn.sm{min-height:34px;padding:4px 10px;font-size:.85rem}
+.pill{display:inline-block;font-size:.75rem;font-weight:700;padding:2px 10px;border-radius:99px;white-space:nowrap}
+.pill.present{background:var(--green-soft);color:var(--green)}
+.pill.absent{background:var(--red-soft);color:var(--red)}
+.pill.pending{background:var(--amber-soft);color:var(--amber-ink)}
+.pill.upcoming,.pill.neutral{background:var(--surface-2);color:var(--muted)}
+.pill.tbc{background:var(--saffron-soft);color:var(--saffron-ink)}
+.notice{border-radius:8px;padding:12px 14px;border:1px solid;font-size:.92rem}
+.notice.info{background:var(--surface-2);border-color:var(--line)}
+.notice.warn{background:var(--amber-soft);border-color:#E9CF7A;color:var(--amber-ink)}
+.notice.err{background:var(--red-soft);border-color:#F0B4AE;color:var(--red)}
+.notice.ok{background:var(--green-soft);border-color:#A8D8B4;color:var(--green)}
+.notice.saff{background:var(--saffron-soft);border-color:#F2C58C;color:var(--saffron-ink);font-weight:600}
+.field{display:grid;gap:4px;min-width:0}
+.field label,.lbl{font-weight:600;font-size:.88rem}
+.input,select.input,textarea.input{width:100%;min-height:44px;border:1px solid var(--line);background:var(--surface);border-radius:8px;padding:8px 12px}
+textarea.input{min-height:88px;resize:vertical}
+.fgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}
+.seg{display:inline-flex;flex-wrap:wrap;gap:6px}
+.seg button{border:1px solid var(--line);background:var(--surface);border-radius:8px;padding:8px 14px;font-weight:600;cursor:pointer;min-height:44px;text-align:left;line-height:1.25}
+.seg button small{display:block;font-weight:400;color:var(--muted);font-size:.78rem}
+.seg button[aria-pressed="true"]{border-color:var(--navy-2);background:var(--navy-2);color:#fff}
+.seg button[aria-pressed="true"] small{color:#DCE5FF}
+.empty{padding:24px;text-align:center;color:var(--muted);border:2px dashed var(--line);border-radius:10px}
+
+/* Welcome message frame */
+.msg{background:var(--surface);border:1px solid var(--line);border-top:5px solid var(--navy-2);border-radius:var(--r);padding:clamp(18px,3.5vw,40px);box-shadow:var(--shadow);font-family:var(--fh)}
+.msg h1{font-size:clamp(1.3rem,2.6vw,1.75rem);color:var(--navy-2);margin-bottom:18px}
+.msg h2{font-size:1.15rem;margin:26px 0 8px;color:var(--navy-2)}
+:root[data-theme="dark"] .msg h1,:root[data-theme="dark"] .msg h2{color:var(--link)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .msg h1,:root:not([data-theme="light"]) .msg h2{color:var(--link)}}
+.msg p,.msg li{font-size:1.05rem;line-height:1.85;max-width:72ch}
+.msg p{margin:0 0 12px}
+.msg ul{padding-left:1.3em;margin:6px 0 14px}
+.msg li{margin-bottom:6px}
+.msg .hl{background:var(--saffron-soft);border-left:4px solid var(--saffron);padding:12px 16px;border-radius:6px;font-weight:600}
+.msg .sign{margin-top:24px;border-top:1px solid var(--line);padding-top:14px}
+.msg .sign b{display:block}
+.aside{display:grid;gap:14px}
+.stat-row{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.stat{background:var(--surface-2);border-radius:8px;padding:10px}
+.stat b{display:block;font-size:1.5rem;font-variant-numeric:tabular-nums;line-height:1.2}
+.stat span{font-size:.78rem;color:var(--muted)}
+.links{display:grid;gap:8px}
+.links a{display:flex;justify-content:space-between;align-items:center;text-decoration:none;color:var(--ink);border:1px solid var(--line);border-radius:8px;padding:12px 14px;font-weight:600;background:var(--surface)}
+.links a:hover{border-color:var(--navy-2)}
+.links a span{color:var(--muted);font-weight:400;font-size:.85rem}
+
+/* Tables */
+.tbl-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:var(--r);background:var(--surface)}
+table{border-collapse:collapse;width:100%;font-size:.9rem}
+th,td{padding:9px 12px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+th{background:var(--surface-2);font-size:.76rem;text-transform:uppercase;letter-spacing:.04em;color:var(--muted);white-space:nowrap}
+th button{all:unset;cursor:pointer}
+th button:focus-visible{outline:2px solid var(--saffron)}
+td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}
+tbody tr:hover{background:var(--surface-2)}
+.wide{min-width:900px}
+.pager{display:flex;gap:8px;align-items:center;justify-content:space-between;flex-wrap:wrap;padding:10px 0}
+.thumb{width:40px;height:40px;border-radius:50%;object-fit:cover;background:var(--surface-2);display:inline-block;vertical-align:middle}
+@media (max-width:720px){
+  table.cards,table.cards tbody,table.cards tr,table.cards td{display:block;width:100%}
+  table.cards thead{display:none}
+  table.cards tr{border-bottom:1px solid var(--line);padding:8px 4px}
+  table.cards td{border:0;padding:3px 10px;display:grid;grid-template-columns:110px 1fr;gap:8px}
+  table.cards td::before{content:attr(data-l);font-weight:600;color:var(--muted);font-size:.8rem}
+}
+
+/* Attendance */
+.steps{display:flex;gap:6px;flex-wrap:wrap;list-style:none;margin:0;padding:0}
+.steps li{padding:6px 12px;border-radius:99px;background:var(--surface-2);color:var(--muted);font-size:.85rem;font-weight:600}
+.steps li[aria-current="step"]{background:var(--navy-2);color:#fff}
+.steps li.done{background:var(--green-soft);color:var(--green)}
+.plist{display:grid;gap:8px;max-height:460px;overflow:auto;padding:2px}
+.pbtn{display:grid;grid-template-columns:1fr auto;gap:4px 10px;text-align:left;border:1px solid var(--line);background:var(--surface);border-radius:8px;padding:10px 12px;cursor:pointer;width:100%;align-items:center}
+.pbtn:hover{border-color:var(--navy-2)}
+.pbtn b{font-size:1rem}
+.pbtn span{font-size:.82rem;color:var(--muted);grid-column:1}
+.pbtn .pill{grid-row:1/3;grid-column:2}
+.verify{display:grid;gap:4px;background:var(--surface-2);border-radius:8px;padding:14px}
+.verify b{font-size:1.2rem}
+.cam{position:relative;width:100%;max-width:440px;aspect-ratio:1/1;background:#0B1020;border-radius:12px;overflow:hidden;display:grid;place-items:center;color:#fff}
+.cam video,.cam img{width:100%;height:100%;object-fit:cover}
+.cam video{transform:scaleX(-1)}
+.cam .ring{position:absolute;inset:14%;border:3px dashed rgba(255,255,255,.6);border-radius:50%;pointer-events:none}
+.cam .ph{display:grid;gap:8px;text-align:center;padding:16px;justify-items:center;color:#C9D3EA}
+.consent{display:flex;gap:10px;align-items:flex-start;background:var(--surface-2);border-radius:8px;padding:12px;font-size:.9rem}
+.consent input{width:22px;height:22px;flex:none;margin-top:2px}
+.success{display:grid;gap:10px;justify-items:center;text-align:center;padding:12px}
+.success img{width:140px;height:140px;border-radius:50%;object-fit:cover;border:5px solid var(--green)}
+.success .big{font-size:1.4rem;font-weight:700;color:var(--green)}
+
+/* Tests */
+.q{border:1px solid var(--line);border-radius:var(--r);padding:16px;background:var(--surface)}
+.q h3{font-size:1rem;font-weight:600;display:flex;gap:10px;align-items:flex-start}
+.q h3 .qn{flex:none;background:var(--navy-2);color:#fff;border-radius:6px;padding:1px 8px;font-size:.85rem}
+.q .meta{font-size:.8rem;color:var(--muted);margin:4px 0 10px 0}
+.opt{display:flex;gap:10px;align-items:flex-start;border:1px solid var(--line);border-radius:8px;padding:10px 12px;margin-top:8px;cursor:pointer;background:var(--surface)}
+.opt:has(input:checked){border-color:var(--navy-2);background:var(--surface-2)}
+.opt input{width:20px;height:20px;flex:none;margin-top:2px;accent-color:var(--navy-2)}
+.q.missing{border-color:var(--red);box-shadow:0 0 0 2px var(--red-soft)}
+.submitbar{position:sticky;bottom:0;background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:12px 16px;display:flex;justify-content:space-between;gap:10px;align-items:center;flex-wrap:wrap;box-shadow:0 -4px 14px rgba(0,0,0,.06);margin-bottom:env(safe-area-inset-bottom,0px)}
+
+/* Materials */
+.mat-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px}
+.mat{display:grid;gap:8px;align-content:start}
+.mat .type{font-size:.72rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--saffron-ink);background:var(--saffron-soft);border-radius:4px;padding:2px 8px;justify-self:start}
+.mat h3{font-size:1.05rem}
+.drop{border:2px dashed var(--line);border-radius:10px;padding:24px;text-align:center;background:var(--surface-2)}
+.days{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;align-items:start}
+.dayc{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;box-shadow:var(--shadow);min-width:0}
+.dayc header{padding:14px 16px;color:#fff;background:var(--navy-2)}
+.dayc.d2 header{background:#1E6B3A}.dayc.d3 header{background:#7A4A12}
+.dayc header .dd{font-size:.8rem;font-weight:600;opacity:.9;letter-spacing:.03em;text-transform:uppercase}
+.dayc header h2{font-size:1.15rem;margin-top:2px;color:#fff}
+.dayc .counts{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+.dayc .counts span{background:rgba(255,255,255,.18);border-radius:99px;padding:2px 10px;font-size:.78rem;font-weight:600}
+.dayc .counts .today{background:var(--saffron);color:#1E1300}
+.folders{list-style:none;margin:0;padding:6px}
+.folders a{display:grid;grid-template-columns:auto 1fr auto;gap:2px 12px;align-items:center;padding:10px;border-radius:8px;text-decoration:none;color:var(--ink)}
+.folders a:hover,.folders a:focus-visible{background:var(--surface-2)}
+.folders .ico{grid-row:1/3;color:var(--saffron)}
+.folders b{font-size:.95rem;line-height:1.3}
+.folders small{grid-column:2;color:var(--muted);font-size:.8rem}
+.folders .go{grid-row:1/3;grid-column:3;font-size:.8rem;font-weight:600;color:var(--link);white-space:nowrap}
+.olinks{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}
+.olink{display:grid;gap:8px;align-content:start;border-left:4px solid var(--green)}
+.olink .ext{justify-self:start;font-size:.72rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;background:var(--green-soft);color:var(--green);border-radius:4px;padding:2px 8px}
+.olink code{font-size:.78rem;color:var(--muted);overflow-wrap:anywhere}
+.res-list{display:grid;gap:10px}
+.res{display:grid;grid-template-columns:auto minmax(0,1fr);gap:12px;align-items:start}
+.res .badge{width:54px;height:54px;border-radius:10px;display:grid;place-items:center;font-size:.7rem;font-weight:700;text-align:center;line-height:1.1;background:var(--surface-2);color:var(--navy-2)}
+.res .badge.pdf{background:var(--red-soft);color:var(--red)}.res .badge.video{background:var(--surface-2);color:var(--saffron-ink)}.res .badge.link{background:var(--green-soft);color:var(--green)}
+.res h3{font-size:1.02rem}
+.res .acts{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}
+.adminbar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;background:var(--saffron-soft);border:1px solid #F2C58C;border-radius:var(--r);padding:10px 12px}
+@media (max-width:980px){.days{grid-template-columns:1fr}}
+.drop.over{border-color:var(--navy-2)}
+
+/* Dashboard */
+.kpis{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:10px}
+.kpi{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:12px 14px}
+.kpi span{display:block;font-size:.78rem;color:var(--muted);font-weight:600}
+.kpi b{display:block;font-size:1.6rem;font-variant-numeric:tabular-nums;line-height:1.25}
+.kpi small{color:var(--muted);font-size:.78rem}
+.kpi.good b{color:var(--green)}
+.subtabs{display:flex;gap:4px;overflow-x:auto;border-bottom:2px solid var(--line)}
+.subtabs button{flex:none;border:0;background:none;padding:10px 14px;font-weight:600;color:var(--muted);cursor:pointer;border-bottom:3px solid transparent;margin-bottom:-2px}
+.subtabs button[aria-selected="true"]{color:var(--navy-2);border-bottom-color:var(--saffron)}
+.tt-edit input{min-height:38px;padding:4px 8px}
+
+/* Viewer */
+.viewer{position:fixed;inset:0;z-index:80;background:#0B1020;display:flex;flex-direction:column;color:#fff}
+.vbar{display:flex;gap:8px;align-items:center;flex-wrap:wrap;padding:8px 12px;padding-top:calc(8px + env(safe-area-inset-top,0px));background:#121A33;border-bottom:1px solid #26325A}
+.vbar .vt{flex:1;min-width:140px;font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.vbar button{background:#22305C;border:1px solid #34467F;color:#fff;border-radius:6px;min-height:38px;min-width:38px;padding:4px 10px;cursor:pointer;font-weight:600}
+.vbar .exit{background:var(--saffron);color:#1E1300;border-color:var(--saffron)}
+.vbody{flex:1;overflow:auto;display:flex;justify-content:center;align-items:flex-start;padding:16px;padding-bottom:calc(16px + env(safe-area-inset-bottom,0px))}
+.vbody canvas{background:#fff;box-shadow:0 4px 20px rgba(0,0,0,.4);max-width:none}
+.vbody .doc{background:#fff;color:#111;padding:28px;max-width:900px;width:100%;border-radius:4px;overflow:auto}
+.vbody .doc table{color:#111}
+.vbody .doc td,.vbody .doc th{border:1px solid #ccc}
+.vbody .imgv{max-width:100%;max-height:100%;object-fit:contain;margin:auto}
+.vmsg{max-width:520px;margin:auto;text-align:center;display:grid;gap:12px;color:#DCE3F5}
+/* Digital Board presentation mode: content fills the screen, compact floating controls */
+.viewer.present{background:#000}
+.viewer.present .vbar{position:absolute;top:calc(8px + env(safe-area-inset-top,0px));right:8px;z-index:2;border:1px solid #34467F;border-radius:10px;background:rgba(18,26,51,.85);opacity:.4;transition:opacity .2s;max-width:calc(100% - 16px);padding:6px 8px}
+.viewer.present .vbar:hover,.viewer.present .vbar:focus-within{opacity:1}
+.viewer.present .vbar .vt{display:none}
+.viewer.present .vbody{padding:0;align-items:center}
+.viewer.present .vbody .imgv,.viewer.present .vbody video{width:100vw;height:100vh;max-width:100vw;max-height:100vh;object-fit:contain}
+@media (hover:none){.viewer.present .vbar{opacity:.85}}
+
+/* Modal + toast */
+.modal{position:fixed;inset:0;z-index:70;background:rgba(10,16,34,.55);display:grid;place-items:center;padding:16px}
+.modal .box{background:var(--surface);color:var(--ink);border-radius:12px;padding:20px;width:min(560px,100%);max-height:90vh;overflow:auto;display:grid;gap:12px}
+.toast{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:90;background:var(--ink);color:var(--bg);padding:12px 18px;border-radius:8px;font-weight:600;max-width:calc(100% - 32px);box-shadow:0 6px 24px rgba(0,0,0,.25)}
+.toast.err{background:var(--red);color:#fff}
+.spin{display:inline-block;width:16px;height:16px;border:2px solid currentColor;border-right-color:transparent;border-radius:50%;animation:sp 0.8s linear infinite;vertical-align:-3px}
+@keyframes sp{to{transform:rotate(360deg)}}
+footer{border-top:1px solid var(--line);padding-block:18px;color:var(--muted);font-size:.85rem;text-align:center}
+
+@media (max-width:900px){.grid2{grid-template-columns:1fr}}
+@media (max-width:560px){
+  .stat-row{grid-template-columns:repeat(3,1fr)}
+  .page-head h1{font-size:1.3rem}
+  .nav a{padding:10px 11px;font-size:.88rem}
+  .strip{font-size:.75rem}
+}
+@media (min-width:1600px){:root{--scale:1.12}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+@media print{
+  .strip,.nav,.crumbs,.no-print,.subtabs,.pager,footer,#notices{display:none!important}
+  body{background:#fff;color:#000}
+  .card,.tbl-wrap{border:0;box-shadow:none}
+  table{font-size:10pt}
+  .banner{max-height:120px;width:auto}
+}
+</style>
+</head>
+<body>
+<a class="sr" href="#main">Skip to content</a>
+<div class="strip">
+  <div class="wrap strip-in">
+    <div class="strip-title">
+      <b>Training-cum-Workshop for INOs under NMMS Scheme (2026–27)</b>
+      <span>Department of School Education, Nuh, Haryana</span>
+    </div>
+    <div class="strip-tools">
+      <span class="conn" id="conn">Connecting…</span>
+      <button class="tbtn" id="fDown" aria-label="Smaller text">A−</button>
+      <button class="tbtn" id="fUp" aria-label="Larger text">A+</button>
+      <span id="authBtn"></span>
+    </div>
+  </div>
+</div>
+<div class="banner-wrap">
+  <img class="banner" src="assets/nmms-banner.jpg" width="2048" height="768" fetchpriority="high" decoding="async"
+       alt="NMMS Training-cum-Workshop for INOs, 2026–27, Department of School Education Nuh">
+  <div class="wrap board-row" id="boardRow" hidden><button class="board-btn" id="boardBtn" title="Show the banner full screen on the digital board">⛶ Digital Board — Full Screen</button></div>
+</div>
+<nav class="nav" aria-label="Main navigation"><div class="wrap nav-in" id="nav"></div></nav>
+<div class="wrap"><ol class="crumbs" id="crumbs" aria-label="Breadcrumb"></ol></div>
+<div class="wrap" id="notices"></div>
+<main class="wrap" id="main" tabindex="-1"></main>
+<footer><div class="wrap">Department of School Education, Nuh, Haryana · NMMS INO Training 2026–27 · DIET Malab (Nuh)</div></footer>
+
+<div class="viewer" id="viewer" hidden role="dialog" aria-modal="true" aria-labelledby="vTitle">
+  <div class="vbar">
+    <span class="vt" id="vTitle"></span>
+    <span id="vPages" class="row" style="gap:6px"></span>
+    <button id="vZoomOut" aria-label="Zoom out">−</button>
+    <span id="vZoom" style="min-width:48px;text-align:center;font-variant-numeric:tabular-nums">100%</span>
+    <button id="vZoomIn" aria-label="Zoom in">+</button>
+    <button id="vFull">Full Screen</button>
+    <button id="vDl" hidden>Download</button>
+    <button class="exit" id="vExit" aria-label="Close viewer">✕ Close</button>
+  </div>
+  <div class="vbody" id="vBody"></div>
+</div>
+<div class="modal" id="modal" hidden role="dialog" aria-modal="true"><div class="box" id="modalBox"></div></div>
+<div class="toast" id="toast" role="status" hidden></div>
+
+<script src="config.js"></script>
+<script>
+'use strict';
+/* =================== Constants =================== */
+const CFG = Object.assign({ GAS_URL: '' }, window.NMMS_CONFIG || {});
+const DAYS = [
+  { n: 1, date: '2026-10-12', label: 'Day 1', long: '12 October 2026' },
+  { n: 2, date: '2026-10-13', label: 'Day 2', long: '13 October 2026' },
+  { n: 3, date: '2026-10-14', label: 'Day 3', long: '14 October 2026' }
+];
+const BLOCKS = ['FP Jhirka', 'Nagina', 'Nuh', 'Punhana', 'Tauru'];
+const CATEGORIES = ['Presentation', 'Guidelines', 'Circular / Letter', 'Form / Template', 'Practice Sheet', 'Other'];
+const FILE_TYPES = {
+  pdf: { mime: 'application/pdf', label: 'PDF' },
+  docx: { mime: 'application/vnd.openxmlformats-officedocument.wordprocessingml.document', label: 'Word' },
+  pptx: { mime: 'application/vnd.openxmlformats-officedocument.presentationml.presentation', label: 'PowerPoint' },
+  xlsx: { mime: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet', label: 'Excel' },
+  jpg: { mime: 'image/jpeg', label: 'Image' }, jpeg: { mime: 'image/jpeg', label: 'Image' },
+  png: { mime: 'image/png', label: 'Image' }, webp: { mime: 'image/webp', label: 'Image' },
+  doc: { mime: 'application/msword', label: 'Word' }, ppt: { mime: 'application/vnd.ms-powerpoint', label: 'PowerPoint' },
+  xls: { mime: 'application/vnd.ms-excel', label: 'Excel' },
+  mp4: { mime: 'video/mp4', label: 'Video', video: true }, webm: { mime: 'video/webm', label: 'Video', video: true }
+};
+const MAX_FILE = 10 * 1024 * 1024, MAX_VIDEO = 25 * 1024 * 1024;
+const ACCEPT = '.pdf,.doc,.docx,.ppt,.pptx,.xls,.xlsx,.jpg,.jpeg,.png,.webp,.mp4,.webm';
+/* Training Materials: day-wise topic folders (ids must match TOPICS in Code.gs). */
+const MAT_DAYS = [
+  { n: 1, theme: 'NMMS Scheme Guidelines and Class VIII Registration', topics: [
+    { id: 'd1-guidelines', t: 'NMMS Scheme Guidelines', h: 'NMMS योजना के दिशा-निर्देश' },
+    { id: 'd1-registration', t: 'Class VIII Registration for NMMS Examination', h: 'NMMS परीक्षा हेतु कक्षा 8 पंजीकरण' },
+    { id: 'd1-prospectus', t: 'NMMS Prospectus', h: 'NMMS प्रॉस्पेक्टस' },
+    { id: 'd1-practice', t: 'Hands-on Practice for Class VIII Registration', h: 'कक्षा 8 पंजीकरण का व्यावहारिक अभ्यास' }] },
+  { n: 2, theme: 'OMR, Renewal Registration and NSP/INO Processes', topics: [
+    { id: 'd2-omr', t: 'Sample OMR Sheet for NMMS Examination', h: 'NMMS परीक्षा हेतु नमूना OMR शीट' },
+    { id: 'd2-renewal', t: 'Renewal Registration Procedure', h: 'नवीनीकरण पंजीकरण प्रक्रिया' },
+    { id: 'd2-nsp-school', t: 'School Registration Process on NSP', h: 'NSP पर विद्यालय पंजीकरण प्रक्रिया' },
+    { id: 'd2-ino-portal', t: 'INO Portal Discussion', h: 'INO पोर्टल पर चर्चा' }] },
+  { n: 3, theme: 'HOI Portal and Fresh Registration', topics: [
+    { id: 'd3-hoi-portal', t: 'HOI Portal Discussion', h: 'HOI पोर्टल पर चर्चा' },
+    { id: 'd3-fresh', t: 'Fresh Registration Procedure', h: 'फ्रेश पंजीकरण प्रक्रिया' }] }
+];
+const TOPIC_MAP = {};
+MAT_DAYS.forEach(d => d.topics.forEach(t => { TOPIC_MAP[t.id] = Object.assign({ day: d.n }, t); }));
+const OFFICIAL_LINKS = [
+  { t: 'BSEH — NMMS Examination Registration', url: 'https://bsehexam2017.in/NMMSS2026/home.aspx', d: 'NMMS examination registration and related official examination information.' },
+  { t: 'SCERT Haryana — NMMS Documents', url: 'https://scertharyana.gov.in/document-category/nmms/', d: 'NMMS-related documents, notifications and resources published by SCERT Haryana.' },
+  { t: 'National Scholarship Portal (NSP)', url: 'https://scholarships.gov.in/', d: 'Scholarship portal for fresh applications, renewal applications and institutional verification processes.' }
+];
+const LIB = {
+  xlsx: 'https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js',
+  pdf: 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js',
+  pdfWorker: 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js',
+  mammoth: 'https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.6.0/mammoth.browser.min.js'
+};
+const QUESTIONS = [
+  { n: 1, m: 2, t: 'multi', q: 'For registration of Class 8th students to appear in NMMS exam, which portal/website is used?',
+    o: ['Board of School Education Haryana, Bhiwani (BSEH)', 'Scholarships.gov.in (NSP)', 'SCERT website', 'DSE website'] },
+  { n: 2, m: 1, t: 'single', q: 'Fresh Registration is done for the students of:',
+    o: ['Class 8th', 'Class 9th', 'Class 10th', 'Class 11th & 12th', 'All of the above-mentioned classes'] },
+  { n: 3, m: 3, t: 'multi', q: 'Renewal Registration is done for the students of:',
+    o: ['Class 8th', 'Class 9th', 'Class 10th', 'Class 11th & 12th', 'All of the above-mentioned classes'] },
+  { n: 4, m: 1, t: 'single', q: 'If a student is applying on NSP and cannot find their school, what could be the reason?',
+    o: ['School is not registered on NSP', 'School is not registered on MIS', 'School is not registered on board website', 'HOI bio-authentication is not done', 'INO bio-authentication is not done'] },
+  { n: 5, m: 1, t: 'single', q: 'If a student cannot find their class while applying on NSP, what could be the reason?',
+    o: ['Student did not search properly', 'School has not added course level or courses or both from INO profile', 'School has not added course level or courses or both from HOI profile', 'Such error cannot occur'] },
+  { n: 6, m: 4, t: 'multi', q: 'While submitting a fresh application, if the NMMS scheme is not displayed, what could be the reason?',
+    o: ['Name spelling on Aadhaar/NSP profile does not match the SCERT result sheet.', 'Date of Birth on Aadhaar/NSP profile does not match the SCERT result sheet.', 'NMMS roll number does not match the SCERT result sheet.', 'Exam year in competitive exam details is incorrect.', 'Competitive exam details have not been filled completely.'] },
+  { n: 7, m: 1, t: 'single', q: "If the student's Aadhaar address is outside Haryana but the student studies in a Haryana government school, which state should be selected as domicile?",
+    o: ['Haryana', 'State mentioned in Aadhaar'] },
+  { n: 8, m: 1, t: 'single', q: "If the student's Aadhaar address is in one Haryana district but the student studies in a government school in another Haryana district, which district is added in the address details?",
+    o: ['District in which the school is located', 'District mentioned in Aadhaar'] },
+  { n: 9, m: 3, t: 'multi', q: 'After qualifying for NMMS, which steps must be completed to receive the scholarship?',
+    o: ['Application submission by student and taking print of the application', 'L1 verification by INO', 'L2 verification by DNO', 'L3 verification by SNO'] },
+  { n: 10, m: 1, t: 'single', q: 'If applications for verification are not showing, what could be the possible reason?',
+    o: ['INO face authentication is not done', 'INO is not enabled for verification by HOI', 'HOI face authentication is not done'] },
+  { n: 11, m: 1, t: 'single', q: 'Do you know whom to contact in case of a query or technical issue?', o: ['Yes', 'No'] },
+  { n: 12, m: 1, t: 'text', q: 'If yes, mention the name, phone number and email ID of the person you contact regarding NMMS issues.' }
+];
+const r = (topic) => ({ start: '', end: '', topic, presenter: '', room: '', notes: '', tbc: true });
+// Source: "Revised INO workshop schedule.pdf" (Time-table for Training-cum Workshop for INOs under NMMS Scheme 2026-27)
+const s = (start, end, topic, notes) => ({ start, end, topic, presenter: '', room: '', notes: notes || '', tbc: false });
+const TEA = (start, end) => s(start, end, 'Tea Break');
+const LUNCH = s('13:15', '13:45', 'Lunch Break');
+const DEFAULT_TT = {
+  1: [s('09:30', '10:30', 'Registration'), s('10:30', '11:00', 'Inaugural Session'), TEA('11:00', '11:15'),
+    s('11:15', '12:15', 'Session 1: Pre-Test'), s('12:15', '13:15', 'Session 2: NMMS Scheme Guidelines'), LUNCH,
+    s('13:45', '15:00', 'Session 3: Class 8 Registration for NMMS Exam, Prospectus Discussion'),
+    s('15:00', '16:30', 'Session 4: Hands-on Practice for Class 8 Registration'), TEA('16:30', '')],
+  2: [s('09:30', '10:00', 'Morning Assembly & Feedback Session'), s('10:00', '11:00', 'Session 1: Sample OMR Sheet for NMMS Exam Discussion'), TEA('11:00', '11:15'),
+    s('11:15', '12:15', 'Session 2: Renewal Registrations Procedure'), s('12:15', '13:15', 'Session 3: School Registration Process on NSP'), LUNCH,
+    s('13:45', '15:00', 'Session 4: INO Portal Discussion'), s('15:00', '16:30', 'Session 5', 'Topic not given in the schedule'), TEA('16:30', '')],
+  3: [s('09:30', '10:30', 'Morning Assembly & Feedback Session'), s('10:30', '11:00', 'Session 1: HOI Portal Discussion'), TEA('11:00', '11:15'),
+    s('11:15', '12:15', 'Session 2: Fresh Registration Procedure'), s('12:15', '13:15', 'Session 3: Presentation by Participants'), LUNCH,
+    s('13:45', '15:00', 'Session 4: Hands-on Practice for Class 8 Registration'), s('15:00', '16:30', 'Session 5: Doubt Clearing Session'), TEA('16:30', '')]
+};
+const TT_NOTES = {
+  2: 'Day 2 starts with its own slots in the schedule: 9:30–10:00 Morning Assembly and 10:00–11:00 Session 1. The topic of Session 5 is not given in the schedule.',
+  3: 'Day 3 has no separate time row in the schedule, so it follows the main header times (9:30–10:30 and 10:30–11:00).'
+};
+const hm12 = t => { if (!t) return ''; const [h, mi] = t.split(':').map(Number); return (h > 12 ? h - 12 : h) + ':' + String(mi).padStart(2, '0'); };
+
+/* =================== Utilities =================== */
+const $ = (s, el = document) => el.querySelector(s);
+const $$ = (s, el = document) => [...el.querySelectorAll(s)];
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+const safeImg = s => typeof s === 'string' && /^data:image\/(jpeg|png|webp);base64,[A-Za-z0-9+/=]+$/.test(s) ? s : '';
+const store = {
+  get(k, d) { try { const v = localStorage.getItem(k); return v === null ? d : JSON.parse(v); } catch (e) { return d; } },
+  set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); return true; } catch (e) { return false; } },
+  sget(k) { try { return sessionStorage.getItem(k); } catch (e) { return null; } },
+  sset(k, v) { try { v == null ? sessionStorage.removeItem(k) : sessionStorage.setItem(k, v); } catch (e) {} }
+};
+function todayISO() { const d = new Date(Date.now() + (330 + new Date().getTimezoneOffset()) * 60000); return d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0'); }
+function todayDay() { const t = todayISO(); const d = DAYS.find(x => x.date === t); return d ? d.n : null; }
+function fmtDT(iso) { if (!iso) return ''; const d = new Date(iso); if (isNaN(d)) return iso; return d.toLocaleString('en-IN', { timeZone: 'Asia/Kolkata', day: '2-digit', month: 'short', hour: 'numeric', minute: '2-digit' }); }
+function fmtT(iso) { if (!iso) return ''; const d = new Date(iso); if (isNaN(d)) return iso; return d.toLocaleTimeString('en-IN', { timeZone: 'Asia/Kolkata', hour: 'numeric', minute: '2-digit' }); }
+function fmtSize(n) { return n > 1048576 ? (n / 1048576).toFixed(1) + ' MB' : Math.max(1, Math.round(n / 1024)) + ' KB'; }
+function ext(name) { return ((/\.([a-z0-9]+)$/i.exec(name || '') || [])[1] || '').toLowerCase(); }
+function norm(s) { return String(s || '').toLowerCase().replace(/[^a-z0-9ऀ-ॿ]/g, ''); }
+let toastT;
+function toast(msg, kind) { const t = $('#toast'); t.textContent = msg; t.className = 'toast' + (kind ? ' ' + kind : ''); t.hidden = false; clearTimeout(toastT); toastT = setTimeout(() => t.hidden = true, kind === 'err' ? 6000 : 3500); }
+const scripts = {};
+function loadScript(src) {
+  if (!scripts[src]) scripts[src] = new Promise((res, rej) => { const s = document.createElement('script'); s.src = src; s.onload = res; s.onerror = () => { delete scripts[src]; rej(new Error('Could not load ' + src)); }; document.head.appendChild(s); });
+  return scripts[src];
+}
+function saveBlob(name, blob) {
+  const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = name; document.body.appendChild(a); a.click();
+  setTimeout(() => { URL.revokeObjectURL(a.href); a.remove(); }, 1500);
+}
+function b64ToBlob(b64, mime) { const bin = atob(b64); const u = new Uint8Array(bin.length); for (let i = 0; i < bin.length; i++) u[i] = bin.charCodeAt(i); return new Blob([u], { type: mime }); }
+function fileToB64(file) { return new Promise((res, rej) => { const fr = new FileReader(); fr.onload = () => res(String(fr.result).split(',')[1]); fr.onerror = () => rej(fr.error); fr.readAsDataURL(file); }); }
+function sanitizeHTML(html) {
+  const doc = new DOMParser().parseFromString(html, 'text/html');
+  doc.querySelectorAll('script,iframe,object,embed,link,meta,style,form,base').forEach(n => n.remove());
+  doc.querySelectorAll('*').forEach(n => [...n.attributes].forEach(a => {
+    if (/^on/i.test(a.name) || (/^(href|src|xlink:href|action)$/i.test(a.name) && /^\s*(javascript|vbscript|data:text)/i.test(a.value))) n.removeAttribute(a.name);
+  }));
+  return doc.body.innerHTML;
+}
+function showModal(html, bind) { $('#modalBox').innerHTML = html; $('#modal').hidden = false; bind && bind($('#modalBox')); const f = $('#modalBox').querySelector('input,select,textarea,button'); f && f.focus(); }
+function closeModal() { $('#modal').hidden = true; $('#modalBox').innerHTML = ''; }
+$('#modal').addEventListener('click', e => { if (e.target.id === 'modal' || e.target.closest('[data-close]')) closeModal(); });
+
+/* =================== API =================== */
+const App = {
+  route: 'home', token: store.sget('nmms26_tok'), isAdmin: false, loading: true, connError: null,
+  att: { step: 'select', q: '', block: '', pid: null, photo: null, consent: false, busy: false, result: null },
+  test: { pre: { step: 'select', q: '', pid: null, answers: {}, busy: false }, post: { step: 'select', q: '', pid: null, answers: {}, busy: false } },
+  dir: { q: '', block: '' }, matDay: todayDay() || 1, ttDay: todayDay() || 1,
+  dash: { tab: 'att', sort: {}, ttDay: 1, ttRows: null, f1: { q: '', block: '', school: '', status: '' }, f2: { q: '', block: '', school: '', status: '' } },
+  imp: { queue: [], busy: false, editId: null }, adminLoadedAt: null
+};
+const S = { participants: [], pmap: {}, marks: {}, testmarks: {}, tt: { 1: null, 2: null, 3: null }, materials: [], settings: {}, admin: null };
+
+async function api(action, payload) {
+  if (!CFG.GAS_URL) throw { code: 'not_configured', message: 'The online server is not connected yet (GAS_URL is empty in config.js).' };
+  let res;
+  try {
+    res = await fetch(CFG.GAS_URL, { method: 'POST', headers: { 'Content-Type': 'text/plain;charset=utf-8' }, body: JSON.stringify(Object.assign({ action, token: App.token || undefined }, payload || {})), redirect: 'follow' });
+  } catch (e) { throw { code: 'network', message: 'Network problem. Check the internet connection and try again.' }; }
+  let j;
+  try { j = await res.json(); } catch (e) { throw { code: 'network', message: 'The server sent an unexpected reply (HTTP ' + res.status + '). Please try again.' }; }
+  if (!j.ok) {
+    if (j.code === 'auth' && App.token && action !== 'login') { App.token = null; store.sset('nmms26_tok', null); App.isAdmin = false; S.admin = null; renderShell(); }
+    throw { code: j.code || 'error', message: j.error || 'Request failed.' };
+  }
+  return j;
+}
+
+/* Outbox: attendance and test submissions that failed because of the network are kept on this device and re-sent. */
+const OUTBOX = 'nmms26_outbox';
+function outbox() { return store.get(OUTBOX, []); }
+function queueSend(action, payload, label) {
+  const ob = outbox(); ob.push({ id: Date.now() + '' + Math.random(), action, payload, label, at: new Date().toISOString() });
+  if (!store.set(OUTBOX, ob)) toast('Could not keep the submission on this device. Please retry now.', 'err');
+  renderNotices();
+}
+let flushing = false;
+async function flushOutbox(manual) {
+  if (flushing || !CFG.GAS_URL) return;
+  const ob = outbox(); if (!ob.length) return;
+  flushing = true; let sent = 0; const left = [];
+  for (const item of ob) {
+    try { await api(item.action, item.payload); sent++; }
+    catch (e) {
+      if (e.code === 'network' || e.code === 'busy') left.push(item);
+      else toast(item.label + ': ' + e.message, 'err');
+    }
+  }
+  store.set(OUTBOX, left); flushing = false;
+  if (sent) { toast(sent + ' saved submission(s) sent to the server ✓'); loadPublic(); }
+  else if (manual && left.length) toast('Still offline. The submission is safe on this device.', 'err');
+  renderNotices();
+}
+window.addEventListener('online', () => flushOutbox());
+setInterval(() => flushOutbox(), 45000);
+
+async function loadPublic() {
+  try {
+    const j = await api('public');
+    S.participants = j.participants || [];
+    S.pmap = Object.fromEntries(S.participants.map(p => [p.id, p]));
+    S.marks = {}; (j.marks || []).forEach(m => { S.marks[m.pid + '_d' + m.day] = m; });
+    S.testmarks = {}; (j.testmarks || []).forEach(m => { S.testmarks[m.pid + '_' + m.type] = m; });
+    S.tt = j.timetable || { 1: null, 2: null, 3: null };
+    S.settings = j.settings || {};
+    App.connError = null;
+  } catch (e) { App.connError = e; }
+  App.loading = false;
+  renderShell(); rerender();
+}
+async function loadAdmin() {
+  const j = await api('admin');
+  S.admin = {
+    contacts: j.contacts || {}, audit: j.audit || [], materials: j.materials || [], settings: j.settings || {},
+    att: Object.fromEntries((j.attendance || []).map(a => [a.pid + '_d' + a.day, a])),
+    pre: Object.fromEntries((j.pre || []).map(t => [t.pid, t])),
+    post: Object.fromEntries((j.post || []).map(t => [t.pid, t]))
+  };
+  App.isAdmin = true; App.adminLoadedAt = new Date();
+  renderShell(); rerender();
+}
+
+/* =================== Status helpers =================== */
+function attStatus(pid, day) {
+  const m = (S.admin && S.admin.att[pid + '_d' + day]) || S.marks[pid + '_d' + day];
+  if (m && m.status === 'present') return 'present';
+  if (m && m.status === 'absent') return 'absent';
+  const t = todayISO(), d = DAYS[day - 1].date;
+  return d < t ? 'absent' : d === t ? 'pending' : 'upcoming';
+}
+const STATUS_LABEL = { present: 'Present', absent: 'Absent', pending: 'Pending', upcoming: 'Upcoming' };
+const pill = (cls, txt) => `<span class="pill ${cls}">${esc(txt)}</span>`;
+const statusPill = s => pill(s, STATUS_LABEL[s]);
+function ttFor(day) { return (S.tt && S.tt[day] && S.tt[day].length) ? S.tt[day] : DEFAULT_TT[day]; }
+function searchPeople(q, block) {
+  const n = norm(q);
+  return S.participants.filter(p => (!block || p.block === block) && (!n || norm(p.name + p.school + p.block + p.id).includes(n)));
+}
+
+/* =================== Shell =================== */
+const ROUTES = {
+  home: { t: 'Home', h: 'मुख्य पृष्ठ' }, attendance: { t: 'Attendance', h: 'उपस्थिति' }, participants: { t: 'Participants', h: 'प्रतिभागी' },
+  timetable: { t: 'Timetable', h: 'समय सारणी' }, materials: { t: 'Training Materials', h: 'प्रशिक्षण सामग्री', admin: true },
+  'pre-test': { t: 'Pre-Test', h: 'प्री-टेस्ट' }, 'post-test': { t: 'Post-Test', h: 'पोस्ट-टेस्ट' },
+  dashboard: { t: 'Dashboard', h: 'डैशबोर्ड', admin: true }, import: { t: 'Import Documents', h: 'दस्तावेज़ अपलोड', admin: true },
+  login: { t: 'Unlock', h: 'अनलॉक' }
+};
+function renderShell() {
+  const pub = ['home', 'attendance', 'participants', 'timetable', 'pre-test', 'post-test'];
+  let h = pub.map(k => `<a href="#${k}" ${App.route === k ? 'aria-current="page"' : ''}>${ROUTES[k].t}</a>`).join('');
+  const lockIco = App.isAdmin ? '' : '<span aria-hidden="true">🔒 </span>';
+  h += '<span class="sp"></span>' + ['materials', 'dashboard', 'import'].map(k => `<a class="adm" href="#${k}" ${App.route === k ? 'aria-current="page"' : ''}>${lockIco}${ROUTES[k].t}${App.isAdmin ? '' : '<span class="sr"> (locked)</span>'}</a>`).join('');
+  $('#nav').innerHTML = h;
+  $('#authBtn').innerHTML = App.isAdmin ? '<button class="tbtn" id="logoutBtn" title="Lock Training Materials, Dashboard and Import Documents again">🔒 Lock</button>' : '<button class="tbtn" id="unlockBtn">🔓 Unlock</button>';
+  const ub = $('#unlockBtn'); if (ub) ub.onclick = () => unlockModal();
+  $('#boardRow').hidden = App.route !== 'home';
+  const lb = $('#logoutBtn'); if (lb) lb.onclick = logout;
+  const c = $('#conn');
+  if (!CFG.GAS_URL) { c.className = 'conn off'; c.textContent = 'Server not connected'; }
+  else if (App.connError) { c.className = 'conn off'; c.textContent = 'Offline'; }
+  else if (App.loading) { c.className = 'conn'; c.textContent = 'Connecting…'; }
+  else { c.className = 'conn ok'; c.textContent = 'Online'; }
+  const R = ROUTES[App.route];
+  const T = App.route === 'materials' && App.matTopic ? TOPIC_MAP[App.matTopic] : null;
+  $('#crumbs').innerHTML = `<li><a href="#home">Home</a></li>` + (T ? `<li><a href="#materials">Training Materials</a></li><li>Day ${T.day}</li><li aria-current="page">${esc(T.t)}</li>`
+    : App.route !== 'home' ? `<li aria-current="page">${esc(R.t)}</li>` : '');
+  document.title = (App.route === 'home' ? '' : R.t + ' · ') + 'NMMS INO Training 2026–27 · Nuh';
+  renderNotices();
+}
+function renderNotices() {
+  const n = [];
+  if (!CFG.GAS_URL) n.push(`<div class="notice warn">The online server is not connected yet. Attendance and tests cannot be submitted until the administrator sets the Apps Script web-app URL in <code>config.js</code>.</div>`);
+  else if (App.connError) n.push(`<div class="notice err">Could not reach the server: ${esc(App.connError.message)} <button class="btn sm sec" id="retryConn">Retry</button></div>`);
+  const ob = outbox();
+  if (ob.length) n.push(`<div class="notice warn">${ob.length} submission(s) are saved on this device and waiting to be sent (${ob.map(x => esc(x.label)).join(', ')}). <button class="btn sm sec" id="flushNow">Send now</button></div>`);
+  $('#notices').innerHTML = n.join('');
+  $('#notices').style.paddingTop = n.length ? '12px' : '0';
+  const rb = $('#retryConn'); if (rb) rb.onclick = () => { App.loading = true; renderShell(); loadPublic(); };
+  const fb = $('#flushNow'); if (fb) fb.onclick = () => flushOutbox(true);
+}
+async function logout() { try { await api('logout'); } catch (e) {} App.token = null; store.sset('nmms26_tok', null); App.isAdmin = false; S.admin = null; fileCache.clear(); App.gatePrompted = App.route; renderShell(); rerender(true); toast('Locked. Training Materials, Dashboard and Import Documents need the password again.'); }
+
+/* =================== Router =================== */
+function route() {
+  let [k, sub] = (location.hash || '#home').slice(1).split('/');
+  if (!ROUTES[k]) k = 'home';
+  App.gatePrompted = null;
+  App.matTopic = k === 'materials' && TOPIC_MAP[sub] ? sub : null;
+  if (App.route === 'attendance' && k !== 'attendance') stopCam();
+  App.route = k;
+  renderShell(); rerender(true);
+}
+window.addEventListener('hashchange', route);
+let pendingRender = false;
+function rerender(force) {
+  const m = $('#main');
+  if (!force && m.contains(document.activeElement) && /^(INPUT|TEXTAREA|SELECT)$/.test(document.activeElement.tagName)) { pendingRender = true; return; }
+  pendingRender = false;
+  const V = VIEWS[App.route] || VIEWS.home;
+  if (!force && V.live === false) return;
+  V.render(m);
+  if (force) { window.scrollTo({ top: 0 }); }
+}
+document.addEventListener('focusout', () => setTimeout(() => { if (pendingRender && !$('#main').contains(document.activeElement)) rerender(); }, 50));
+
+/* =================== Views =================== */
+const VIEWS = {};
+
+VIEWS.home = { render(m) {
+  const td = todayDay(), total = S.participants.length;
+  const present = td ? S.participants.filter(p => attStatus(p.id, td) === 'present').length : 0;
+  const pre = Object.keys(S.testmarks).filter(k => k.endsWith('_pre')).length, post = Object.keys(S.testmarks).filter(k => k.endsWith('_post')).length;
+  m.innerHTML = `<div class="grid2">
+  <article class="msg" aria-labelledby="msgT">
+    <h1 id="msgT">NMMS प्रशिक्षण का उद्देश्य, महत्व एवं हमारी सामूहिक जिम्मेदारी</h1>
+    <p><b>प्रिय साथियों,</b></p>
+    <p>इस प्रशिक्षण का उद्देश्य केवल पोर्टल चलाना, पंजीकरण करना या ऑनलाइन फॉर्म भरना सिखाना नहीं है। इसका वास्तविक उद्देश्य आपको इस योग्य बनाना है कि आप अपने विद्यालय के प्रत्येक पात्र विद्यार्थी तक NMMS योजना की सही जानकारी पहुँचा सकें और उसे इस अवसर का लाभ उठाने के लिए आवश्यक सहयोग दे सकें।</p>
+    <p>इन तीन दिनों में हम योजना के दिशा-निर्देशों, कक्षा 8 के विद्यार्थियों के पंजीकरण, प्रॉस्पेक्टस की समझ, ऑनलाइन प्रक्रियाओं, OMR शीट के अभ्यास तथा NSP, INO और HOI पोर्टल से संबंधित प्रक्रियाओं पर व्यावहारिक चर्चा करेंगे।</p>
+    <p>ऑनलाइन आवेदन में छोटी-सी त्रुटि, अधूरी जानकारी या समय पर सत्यापन न होने से किसी विद्यार्थी को कठिनाई हो सकती है। हमारा प्रयास होना चाहिए कि प्रशिक्षण के बाद हम इन समस्याओं को पहचानने, उनका समाधान खोजने और विद्यार्थियों को सही दिशा देने में सक्षम हों।</p>
+    <h2>हम चाहते हैं कि प्रत्येक INO साथी—</h2>
+    <ul>
+      <li>NMMS योजना, पात्रता, परीक्षा प्रक्रिया और छात्रवृत्ति संबंधी दिशा-निर्देशों को स्पष्ट रूप से समझे।</li>
+      <li>कक्षा 8 के पात्र विद्यार्थियों की समय पर पहचान करे और उन्हें परीक्षा के लिए प्रेरित करे।</li>
+      <li>ऑनलाइन पंजीकरण और आवश्यक दस्तावेजों की प्रक्रिया में गलतियों को कम करे।</li>
+      <li>विद्यार्थियों को OMR शीट भरने और परीक्षा की आवश्यक प्रक्रियाओं का अभ्यास करवाए।</li>
+      <li>NSP, INO और HOI की प्रक्रियाओं को समझकर विद्यालय स्तर पर प्रभावी समन्वय स्थापित करे।</li>
+      <li>आवेदन, सत्यापन और नवीनीकरण में आने वाली समस्याओं के समाधान के लिए सही मार्गदर्शन उपलब्ध करवाए।</li>
+      <li>यह सुनिश्चित करने का प्रयास करे कि कोई पात्र विद्यार्थी जानकारी या तकनीकी सहायता के अभाव में अवसर से वंचित न रह जाए।</li>
+    </ul>
+    <p>हमारी सफलता केवल भरे गए फॉर्म या जमा किए गए आवेदनों की संख्या से नहीं मापी जाएगी। वास्तविक सफलता तब होगी, जब अधिक से अधिक पात्र विद्यार्थियों तक योजना का लाभ पहुँचाने में हम प्रभावी योगदान दे सकें।</p>
+    <h2>❤️ हमारी सामूहिक जिम्मेदारी — एक विद्यार्थी, एक सपना, एक बेहतर भविष्य</h2>
+    <p>शिक्षा के क्षेत्र में हमारी भूमिका केवल निर्धारित कार्यों को पूरा करना नहीं, बल्कि विद्यार्थियों को बेहतर भविष्य की ओर ले जाने में सहयोग करना भी है।</p>
+    <p>किसी विद्यार्थी को समय पर सही जानकारी देना, आवेदन में सहायता करना और उसे प्रोत्साहित करना उसके जीवन में बड़ा बदलाव ला सकता है। हो सकता है कि आज हमारे मार्गदर्शन से आगे बढ़ने वाला कोई विद्यार्थी कल उच्च शिक्षा प्राप्त करे, अपने परिवार की परिस्थितियाँ बदले और समाज के लिए प्रेरणा बने। उस दिन हमारी सबसे बड़ी उपलब्धि उस विद्यार्थी की सफलता होगी।</p>
+    <p>NMMS की जिम्मेदारी किसी एक INO या विद्यालय की नहीं, बल्कि हम सभी का साझा दायित्व है। हमें मिलकर प्रयास करना है कि प्रत्येक पात्र विद्यार्थी तक योजना की जानकारी पहुँचे, आवेदन एवं सत्यापन की समस्याओं का समाधान हो और कोई भी विद्यार्थी मार्गदर्शन के अभाव में इस अवसर से वंचित न रह जाए।</p>
+    <h2>🤝 आइए, एक साझा संकल्प लें</h2>
+    <p>इन तीन दिनों में हम ज्ञान और अनुभव साझा करें, समस्याओं का समाधान सीखें और प्रशिक्षण से प्राप्त जानकारी को अपने विद्यालयों तक पहुँचाएँ।</p>
+    <p class="hl">याद रखें, एक विद्यार्थी की सफलता केवल उसका भविष्य नहीं सँवारती, बल्कि पूरे परिवार की उम्मीदों को नई दिशा देती है।</p>
+    <p>आइए, ऐसा वातावरण बनाएँ जहाँ हर प्रतिभाशाली विद्यार्थी को अवसर मिले, हर सपने को प्रोत्साहन मिले और कोई भी पात्र विद्यार्थी पीछे न छूटे।</p>
+    <p>आप सभी के समर्पण, सहयोग एवं सक्रिय सहभागिता के लिए हार्दिक धन्यवाद।</p>
+    <div class="sign"><b>सादर एवं शुभकामनाओं सहित,</b><b>NMMS प्रशिक्षण टीम</b><i>Department of School Education, Nuh, Haryana</i></div>
+  </article>
+  <aside class="aside">
+    <div class="card">
+      <h2>${td ? 'Today · ' + DAYS[td - 1].label : 'Training dates'}</h2>
+      <p class="muted small" style="margin:4px 0 12px">${td ? esc(DAYS[td - 1].long) + ' · DIET Malab (Nuh)' : '12, 13 and 14 October 2026 · DIET Malab (Nuh)'}</p>
+      <div class="stat-row">
+        <div class="stat"><b>${td ? present : '–'}<small class="muted" style="font-size:.8rem">/${total || 34}</small></b><span>Present today</span></div>
+        <div class="stat"><b>${pre}</b><span>Pre-Test done</span></div>
+        <div class="stat"><b>${post}</b><span>Post-Test done</span></div>
+      </div>
+    </div>
+    <nav class="links" aria-label="Quick links">
+      <a href="#attendance">Mark attendance <span>फोटो सहित उपस्थिति ›</span></a>
+      <a href="#timetable">Timetable <span>समय सारणी ›</span></a>
+      <a href="#materials">Training materials <span>सामग्री ›</span></a>
+      <a href="#pre-test">Pre-Test <span>12 प्रश्न · 20 अंक ›</span></a>
+      <a href="#post-test">Post-Test <span>12 प्रश्न · 20 अंक ›</span></a>
+      <a href="#participants">Participant directory <span>प्रतिभागी ›</span></a>
+    </nav>
+  </aside></div>`;
+} };
+
+/* ---------- Participants ---------- */
+VIEWS.participants = { render(m) {
+  const list = searchPeople(App.dir.q, App.dir.block);
+  const adm = App.isAdmin && S.admin;
+  m.innerHTML = `<div class="page-head"><div><h1>Participant Directory</h1><p>${S.participants.length} approved participants · प्रतिभागी सूची</p></div>
+   ${adm ? '<div class="row no-print"><button class="btn" id="pAdd">Add participant</button><button class="btn sec" id="pImp">Import CSV</button><input type="file" id="pFile" accept=".csv,text/csv" hidden></div>' : ''}</div>
+  <div class="card row no-print">
+    <div class="field" style="flex:2;min-width:200px"><label for="dq">Search</label><input class="input" id="dq" placeholder="Name, school, block or ID" value="${esc(App.dir.q)}"></div>
+    <div class="field" style="flex:1;min-width:160px"><label for="db">Block</label><select class="input" id="db"><option value="">All blocks</option>${BLOCKS.map(b => `<option ${b === App.dir.block ? 'selected' : ''}>${b}</option>`).join('')}</select></div>
+  </div>
+  ${S.participants.length ? `<div class="tbl-wrap"><table class="cards"><thead><tr><th>ID</th><th>Name</th>${adm ? '<th>Mobile</th>' : ''}<th>School / Office</th><th>Block</th>${DAYS.map(d => `<th>${d.label}<br><small>${d.date.slice(8)} Oct</small></th>`).join('')}${adm ? '<th></th>' : ''}</tr></thead><tbody>
+    ${list.map(p => `<tr><td data-l="ID">${esc(p.id)}</td><td data-l="Name"><b>${esc(p.name)}</b></td>${adm ? `<td data-l="Mobile">${esc(S.admin.contacts[p.id] || '—')}</td>` : ''}<td data-l="School">${esc(p.school)}</td><td data-l="Block">${esc(p.block)}</td>${DAYS.map(d => `<td data-l="${d.label}">${statusPill(attStatus(p.id, d.n))}</td>`).join('')}${adm ? `<td data-l=""><button class="btn sm sec" data-edit="${esc(p.id)}">Edit</button></td>` : ''}</tr>`).join('') || `<tr><td colspan="9" class="muted">No participant matches the search.</td></tr>`}
+  </tbody></table></div>` : `<div class="empty">${App.loading ? '<span class="spin"></span> Loading participants…' : 'The participant list could not be loaded.'}</div>`}
+  ${adm ? '<p class="muted small">Duplicate rule: a participant is treated as the same person when the 10-digit mobile matches, or when name and school/office match (ignoring case, spaces and punctuation). CSV columns: participant_id, name, mobile, school_or_office, block.</p>' : ''}`;
+  $('#dq').oninput = e => { App.dir.q = e.target.value; VIEWS.participants.render(m); const i = $('#dq'); i.focus(); i.setSelectionRange(i.value.length, i.value.length); };
+  $('#db').onchange = e => { App.dir.block = e.target.value; VIEWS.participants.render(m); };
+  if (adm) {
+    $('#pAdd').onclick = () => editParticipant(null);
+    $$('[data-edit]', m).forEach(b => b.onclick = () => editParticipant(b.dataset.edit));
+    $('#pImp').onclick = () => $('#pFile').click();
+    $('#pFile').onchange = e => importCSV(e.target.files[0]);
+  }
+} };
+
+function editParticipant(id) {
+  const p = id ? S.pmap[id] : { name: '', school: '', block: 'Nuh' };
+  showModal(`<h2>${id ? 'Edit participant ' + esc(id) : 'Add participant'}</h2>
+   <form id="pf" class="fgrid" novalidate>
+    <div class="field"><label for="pn">Name</label><input class="input" id="pn" value="${esc(p.name)}" required></div>
+    <div class="field"><label for="pm">Mobile (10 digits, optional)</label><input class="input" id="pm" inputmode="numeric" maxlength="10" value="${esc(id ? S.admin.contacts[id] || '' : '')}"></div>
+    <div class="field" style="grid-column:1/-1"><label for="ps">School / Office</label><input class="input" id="ps" value="${esc(p.school)}" required></div>
+    <div class="field"><label for="pb">Block</label><select class="input" id="pb">${BLOCKS.map(b => `<option ${b === p.block ? 'selected' : ''}>${b}</option>`).join('')}</select></div>
+    <div id="pErr" style="grid-column:1/-1"></div>
+    <div class="row" style="grid-column:1/-1"><button class="btn" id="pSave">Save</button><button type="button" class="btn sec" data-close>Cancel</button></div>
+   </form>`, box => {
+    $('#pf', box).onsubmit = async e => {
+      e.preventDefault();
+      const participant = { id: id || '', name: $('#pn').value, mobile: $('#pm').value.replace(/\D/g, ''), school: $('#ps').value, block: $('#pb').value };
+      if (participant.mobile && !/^[6-9]\d{9}$/.test(participant.mobile)) { $('#pErr').innerHTML = '<div class="notice err">Mobile must be 10 digits starting with 6–9, or blank.</div>'; return; }
+      $('#pSave').disabled = true;
+      try { const j = await api('saveParticipant', { participant }); closeModal(); toast('Saved ' + j.id + ' ✓'); await Promise.all([loadPublic(), loadAdmin()]); }
+      catch (err) { $('#pErr').innerHTML = `<div class="notice err">${esc(err.message)}</div>`; $('#pSave').disabled = false; }
+    };
+  });
+}
+function parseCSV(text) {
+  const rows = []; let row = [], cur = '', q = false;
+  text = text.replace(/^﻿/, '');
+  for (let i = 0; i < text.length; i++) {
+    const c = text[i];
+    if (q) { if (c === '"') { if (text[i + 1] === '"') { cur += '"'; i++; } else q = false; } else cur += c; }
+    else if (c === '"') q = true; else if (c === ',') { row.push(cur); cur = ''; }
+    else if (c === '\n' || c === '\r') { if (c === '\r' && text[i + 1] === '\n') i++; row.push(cur); rows.push(row); row = []; cur = ''; }
+    else cur += c;
+  }
+  if (cur || row.length) { row.push(cur); rows.push(row); }
+  return rows.filter(r => r.some(x => x.trim()));
+}
+async function importCSV(file) {
+  if (!file) return;
+  const rows = parseCSV(await file.text());
+  const head = (rows.shift() || []).map(h => h.trim().toLowerCase());
+  const need = ['name', 'school_or_office', 'block'];
+  if (!need.every(h => head.includes(h))) { toast('CSV needs columns: participant_id, name, mobile, school_or_office, block', 'err'); return; }
+  const data = rows.map(r => Object.fromEntries(head.map((h, i) => [h, (r[i] || '').trim()])));
+  showModal(`<h2>Import ${data.length} rows?</h2><p class="muted">Rows with a matching participant ID, mobile, or name + school update the existing record. Other rows create new participants.</p>
+   <div class="tbl-wrap" style="max-height:240px"><table><thead><tr><th>ID</th><th>Name</th><th>Mobile</th><th>School</th><th>Block</th></tr></thead><tbody>${data.slice(0, 50).map(d => `<tr><td>${esc(d.participant_id)}</td><td>${esc(d.name)}</td><td>${esc(d.mobile)}</td><td>${esc(d.school_or_office)}</td><td>${esc(d.block)}</td></tr>`).join('')}</tbody></table></div>
+   <div id="iErr"></div><div class="row"><button class="btn" id="iGo">Import</button><button class="btn sec" data-close>Cancel</button></div>`, box => {
+    $('#iGo', box).onclick = async () => {
+      $('#iGo').disabled = true;
+      try {
+        const j = await api('importParticipants', { rows: data });
+        $('#iErr').innerHTML = `<div class="notice ok">${j.created} created, ${j.updated} updated.${j.errors.length ? '<br>' + j.errors.map(esc).join('<br>') : ''}</div>`;
+        await Promise.all([loadPublic(), loadAdmin()]);
+      } catch (e) { $('#iErr').innerHTML = `<div class="notice err">${esc(e.message)}</div>`; $('#iGo').disabled = false; }
+    };
+  });
+}
+
+/* ---------- Attendance ---------- */
+let camStream = null;
+function stopCam() { if (camStream) { camStream.getTracks().forEach(t => t.stop()); camStream = null; } }
+VIEWS.attendance = { render(m) {
+  const A = App.att, td = todayDay();
+  const step = A.step;
+  const head = `<div class="page-head"><div><h1>Online Attendance with Photo</h1><p>${td ? `<b>${DAYS[td - 1].label}</b> · ${esc(DAYS[td - 1].long)}` : 'Attendance opens on the training days: 12, 13 and 14 October 2026.'}</p></div>
+   <ol class="steps" aria-label="Progress"><li class="${step !== 'select' ? 'done' : ''}" ${step === 'select' ? 'aria-current="step"' : ''}>1 · Select your name</li><li class="${step === 'done' ? 'done' : ''}" ${step === 'photo' ? 'aria-current="step"' : ''}>2 · Photo &amp; confirm</li><li ${step === 'done' ? 'aria-current="step" class="done"' : ''}>3 · Done</li></ol></div>`;
+  if (!td) { m.innerHTML = head + `<div class="notice info">Today is not a training day. If attendance needs to be recorded or corrected, the administrator can do it from the Dashboard.</div>`; return; }
+  if (step === 'select') {
+    const list = searchPeople(A.q, A.block);
+    m.innerHTML = head + `<div class="card" style="display:grid;gap:12px">
+      <div class="row"><div class="field" style="flex:2;min-width:200px"><label for="aq">Search your name / अपना नाम खोजें</label><input class="input" id="aq" autocomplete="off" placeholder="Type your name or school" value="${esc(A.q)}"></div>
+      <div class="field" style="flex:1;min-width:150px"><label for="ab">Block</label><select class="input" id="ab"><option value="">All blocks</option>${BLOCKS.map(b => `<option ${b === A.block ? 'selected' : ''}>${b}</option>`).join('')}</select></div></div>
+      <div class="plist" role="list">${list.map(p => { const s = attStatus(p.id, td); return `<button class="pbtn" role="listitem" data-pid="${esc(p.id)}"><b>${esc(p.name)}</b>${statusPill(s)}<span>${esc(p.school)} · ${esc(p.block)}</span></button>`; }).join('') || `<div class="empty">${App.loading ? '<span class="spin"></span> Loading…' : 'No matching name. Ask the organiser to check the participant list.'}</div>`}</div></div>`;
+    $('#aq').oninput = e => { A.q = e.target.value; VIEWS.attendance.render(m); const i = $('#aq'); i.focus(); i.setSelectionRange(i.value.length, i.value.length); };
+    $('#ab').onchange = e => { A.block = e.target.value; VIEWS.attendance.render(m); };
+    $$('[data-pid]', m).forEach(b => b.onclick = () => { A.pid = b.dataset.pid; A.step = 'photo'; A.photo = null; A.consent = false; VIEWS.attendance.render(m); });
+    return;
+  }
+  const p = S.pmap[A.pid];
+  if (step === 'done' && A.result) {
+    m.innerHTML = head + `<div class="card success">${safeImg(A.photo) ? `<img src="${A.photo}" alt="Your attendance photo">` : ''}
+      <div class="big">${A.result.queued ? 'Saved on this device' : A.result.duplicate ? 'Attendance already recorded' : 'Attendance recorded ✓'}</div>
+      <div style="font-size:1.2rem;font-weight:700">${esc(p.name)}</div><div class="muted">${esc(p.school)} · ${esc(p.block)}</div>
+      <div>${DAYS[td - 1].label} · ${A.result.at ? esc(fmtT(A.result.at)) : ''}</div>
+      ${A.result.queued ? '<div class="notice warn">The internet connection failed. Your attendance is kept on this device and will be sent automatically. Please do not clear the browser data.</div>' : ''}
+      <button class="btn lg" id="aNext">Next participant</button></div>`;
+    $('#aNext').onclick = () => { stopCam(); Object.assign(A, { step: 'select', q: '', pid: null, photo: null, consent: false, result: null }); VIEWS.attendance.render(m); $('#aq') && $('#aq').focus(); };
+    return;
+  }
+  const already = attStatus(A.pid, td);
+  m.innerHTML = head + `<div class="grid2"><div class="card" style="display:grid;gap:14px">
+     <div class="verify"><span class="muted small">Please verify / कृपया जाँच करें</span><b>${esc(p.name)}</b><span>${esc(p.school)}</span><span class="muted">Block: ${esc(p.block)} · ID ${esc(p.id)}</span></div>
+     ${already === 'present' ? `<div class="notice ok">Your ${DAYS[td - 1].label} attendance is already recorded. No need to submit again.</div>` : already === 'absent' ? `<div class="notice warn">The administrator has recorded this day for you. Contact the organiser if this is wrong.</div>` : ''}
+     <button class="btn sec" id="aChange">Not me — choose a different name</button>
+     ${already === 'pending' ? `
+     <label class="consent"><input type="checkbox" id="aConsent" ${A.consent ? 'checked' : ''}><span><b>Photo consent / फोटो सहमति:</b> मेरी फोटो केवल इस प्रशिक्षण की उपस्थिति सत्यापन हेतु ली जा रही है। यह सार्वजनिक नहीं होगी; इसे केवल अधिकृत प्रशासक देख सकेंगे। My photo is used only to verify attendance for this training and is visible only to authorised administrators.</span></label>` : ''}
+   </div>
+   ${already === 'pending' ? `<div class="card" style="display:grid;gap:12px;justify-items:start">
+     <div class="cam" id="cam">${safeImg(A.photo) ? `<img src="${A.photo}" alt="Photo preview">` : `<video id="vid" playsinline muted hidden></video><div class="ring" id="ring" hidden></div><div class="ph" id="ph"><div style="font-size:2.2rem" aria-hidden="true">📷</div><div>Open the camera or upload a photo</div></div>`}</div>
+     <div class="row" id="camBtns"></div>
+     <div id="camMsg" style="width:100%"></div>
+     <input type="file" id="fCap" accept="image/*" capture="user" hidden><input type="file" id="fUp" accept="image/*" hidden>
+     <button class="btn green lg" id="aConfirm" style="width:100%" ${A.photo && A.consent && !A.busy ? '' : 'disabled'}>${A.busy ? '<span class="spin"></span> Saving…' : 'Confirm attendance · उपस्थिति दर्ज करें'}</button>
+   </div>` : ''}</div>`;
+  $('#aChange').onclick = () => { stopCam(); Object.assign(A, { step: 'select', pid: null, photo: null }); VIEWS.attendance.render(m); };
+  if (already !== 'pending') return;
+  $('#aConsent').onchange = e => { A.consent = e.target.checked; $('#aConfirm').disabled = !(A.photo && A.consent); };
+  const btns = $('#camBtns');
+  const setBtns = live => {
+    btns.innerHTML = A.photo ? `<button class="btn sec" id="cRetake">Retake</button><button class="btn sec" id="cReplace">Replace with upload</button>`
+      : live ? `<button class="btn saff lg" id="cSnap">Capture photo</button><button class="btn sec" id="cStop">Cancel</button>`
+        : `<button class="btn saff lg" id="cOpen">Open Camera</button><button class="btn sec" id="cUpload">Upload Photo</button>`;
+    const on = (id, f) => { const b = $('#' + id); if (b) b.onclick = f; };
+    on('cOpen', openCamera); on('cUpload', () => $('#fUp').click()); on('cSnap', snap);
+    on('cStop', () => { stopCam(); setBtns(false); $('#vid').hidden = true; $('#ring').hidden = true; $('#ph').hidden = false; });
+    on('cRetake', () => { A.photo = null; VIEWS.attendance.render(m); setTimeout(openCamera, 0); });
+    on('cReplace', () => $('#fUp').click());
+  };
+  const msg = (t, k) => { $('#camMsg').innerHTML = t ? `<div class="notice ${k || 'warn'}">${t}</div>` : ''; };
+  async function openCamera() {
+    msg('');
+    const canLive = window.isSecureContext && navigator.mediaDevices && navigator.mediaDevices.getUserMedia;
+    if (!canLive) { $('#fCap').click(); return; }
+    try {
+      stopCam();
+      camStream = await navigator.mediaDevices.getUserMedia({ video: { facingMode: 'user', width: { ideal: 720 }, height: { ideal: 720 } }, audio: false });
+      if (App.route !== 'attendance' || !$('#vid')) { stopCam(); return; }
+      const v = $('#vid'); v.srcObject = camStream; v.hidden = false; $('#ring').hidden = false; $('#ph').hidden = true;
+      await v.play().catch(() => {});
+      setBtns(true);
+    } catch (e) {
+      const n = e && e.name;
+      msg(n === 'NotAllowedError' ? 'Camera permission was denied. Allow the camera in the browser settings, or use <b>Upload Photo</b>.'
+        : n === 'NotFoundError' || n === 'OverconstrainedError' ? 'No camera was found on this device. Please use <b>Upload Photo</b>.'
+          : 'The camera could not be started. Please use <b>Upload Photo</b>.');
+      setBtns(false);
+    }
+  }
+  function crop(src, w, h) {
+    const N = 320, c = document.createElement('canvas'); c.width = N; c.height = N;
+    const s = Math.min(w, h); c.getContext('2d').drawImage(src, (w - s) / 2, (h - s) / 2, s, s, 0, 0, N, N);
+    return c.toDataURL('image/jpeg', 0.78);
+  }
+  function setPhoto(p) { A.photo = p; stopCam(); VIEWS.attendance.render(m); }
+  function snap() { const v = $('#vid'); if (!v || !v.videoWidth) { msg('The camera is not ready yet. Wait a second and try again.'); return; } setPhoto(crop(v, v.videoWidth, v.videoHeight)); }
+  const onFile = e => {
+    const f = e.target.files[0]; e.target.value = '';
+    if (!f) return;
+    if (!/^image\//.test(f.type) && !/\.(jpe?g|png|webp|heic|heif)$/i.test(f.name)) { msg('Please choose a photo (JPG or PNG).', 'err'); return; }
+    const url = URL.createObjectURL(f), img = new Image();
+    img.onload = () => { setPhoto(crop(img, img.naturalWidth, img.naturalHeight)); URL.revokeObjectURL(url); };
+    img.onerror = () => { URL.revokeObjectURL(url); msg('This photo format cannot be opened in the browser. Please take a new photo or choose a JPG/PNG.', 'err'); };
+    img.src = url;
+  };
+  $('#fCap').onchange = onFile; $('#fUp').onchange = onFile;
+  setBtns(!!camStream);
+  if (camStream && $('#vid')) { const v = $('#vid'); v.srcObject = camStream; v.hidden = false; $('#ring').hidden = false; $('#ph').hidden = true; v.play().catch(() => {}); }
+  $('#aConfirm').onclick = async () => {
+    if (!A.photo || !A.consent) return;
+    A.busy = true; VIEWS.attendance.render(m);
+    const payload = { pid: A.pid, day: td, photo: A.photo, consent: true };
+    try {
+      const j = await api('attend', payload);
+      A.result = { duplicate: j.duplicate, at: j.at }; A.step = 'done';
+      S.marks[A.pid + '_d' + td] = { pid: A.pid, day: td, at: j.at, status: 'present' };
+      loadPublic();
+    } catch (e) {
+      if (e.code === 'network') { queueSend('attend', payload, 'Attendance · ' + p.name); A.result = { queued: true, at: new Date().toISOString() }; A.step = 'done'; }
+      else toast(e.message, 'err');
+    }
+    A.busy = false; stopCam(); VIEWS.attendance.render(m);
+  };
+}, live: true };
+
+/* ---------- Timetable ---------- */
+VIEWS.timetable = { render(m) {
+  const d = App.ttDay, rows = ttFor(d), anyTbc = rows.some(x => x.tbc || !x.start);
+  m.innerHTML = `<div class="page-head"><div><h1>Training Timetable</h1><p>Three-day Training-cum-Workshop · DIET Malab (Nuh)</p></div></div>
+  <div class="seg" role="group" aria-label="Training day">${DAYS.map(x => `<button data-d="${x.n}" aria-pressed="${x.n === d}">${x.label}<small>${x.long}</small></button>`).join('')}</div>
+  <p class="muted small" style="margin:0">Source: Revised INO workshop schedule (Department of School Education Haryana, SCERT Haryana &amp; HSSPP Panchkula Training Calendar 2026-27).${TT_NOTES[d] ? ' ' + TT_NOTES[d] : ''}</p>${anyTbc ? '<div class="notice info">Some session times are to be confirmed by the organiser.</div>' : ''}
+  <div class="tbl-wrap"><table class="cards"><thead><tr><th>#</th><th>Time</th><th>Session</th></tr></thead><tbody>
+  ${rows.map((x, i) => `<tr><td data-l="#">${i + 1}</td><td data-l="Time">${x.tbc || !x.start ? pill('tbc', 'Time to be confirmed') : esc(x.end ? hm12(x.start) + '–' + hm12(x.end) : 'From ' + hm12(x.start))}</td><td data-l="Session"><b>${esc(x.topic)}</b></td></tr>`).join('')}
+  </tbody></table></div>
+  ${App.isAdmin ? '<p class="small no-print"><a href="#dashboard" id="ttEditLink">Edit the timetable in the Dashboard ›</a></p>' : ''}`;
+  $$('[data-d]', m).forEach(b => b.onclick = () => { App.ttDay = +b.dataset.d; VIEWS.timetable.render(m); });
+  const l = $('#ttEditLink'); if (l) l.onclick = () => { App.dash.tab = 'timetable'; App.dash.ttDay = d; App.dash.ttRows = null; };
+} };
+
+/* ---------- Training Materials ---------- */
+const FOLDER_SVG = '<svg class="ico" width="28" height="28" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M10 4l2 2h8a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h6z"/></svg>';
+function matType(mt) { return mt.kind === 'link' ? 'Link' : (FILE_TYPES[ext(mt.name)] || {}).label || 'File'; }
+function matSource() { return S.admin ? S.admin.materials : []; }
+function topicItems(id) { return matSource().filter(x => x.topic === id).sort((a, b) => a.order - b.order || String(a.at).localeCompare(String(b.at))); }
+function maxFor(name) { return (FILE_TYPES[ext(name)] || {}).video ? MAX_VIDEO : MAX_FILE; }
+function checkLocalFile(f) {
+  const e = ext(f.name), t = FILE_TYPES[e];
+  if (!t) return 'Not allowed: .' + (e || '?') + '. Use PDF, DOC/DOCX, PPT/PPTX, XLS/XLSX, JPG, PNG, WebP, MP4 or WebM.';
+  if (f.type && f.type !== t.mime && !(t.mime === 'image/jpeg' && f.type === 'image/jpg')) return 'The file type (' + f.type + ') does not match .' + e + '.';
+  if (f.size > maxFor(f.name)) return 'Larger than ' + (maxFor(f.name) / 1048576) + ' MB (' + fmtSize(f.size) + ').';
+  if (!f.size) return 'The file is empty.';
+  return '';
+}
+async function refreshAll() { await Promise.all([loadPublic(), App.isAdmin ? loadAdmin() : null]); }
+
+VIEWS.materials = { render(m) {
+  if (!adminGate(m)) return;
+  if (App.matTopic) return renderFolder(m, TOPIC_MAP[App.matTopic]);
+  const td = todayDay();
+  m.innerHTML = `<div class="page-head"><div><h1>Training Materials</h1><p>प्रशिक्षण सामग्री · day-wise resource folders and official NMMS links</p></div>${App.isAdmin ? '<a class="btn sec no-print" href="#import">Import Documents (all folders)</a>' : ''}</div>
+  <div class="days">${MAT_DAYS.map(d => {
+    const total = d.topics.reduce((n, t) => n + topicItems(t.id).length, 0);
+    return `<section class="dayc d${d.n}" aria-labelledby="dh${d.n}"><header>
+      <div class="dd">Day ${d.n} · ${esc(DAYS[d.n - 1].long)}</div><h2 id="dh${d.n}">${esc(d.theme)}</h2>
+      <div class="counts"><span>${d.topics.length} topics</span><span>${total} resource${total === 1 ? '' : 's'}</span>${td === d.n ? '<span class="today">Today</span>' : ''}</div></header>
+      <ul class="folders">${d.topics.map(t => { const n = topicItems(t.id).length; return `<li><a href="#materials/${t.id}">${FOLDER_SVG}<b>${esc(t.t)}</b><small>${esc(t.h)} · ${n} resource${n === 1 ? '' : 's'}</small><span class="go">Open Materials ›</span></a></li>`; }).join('')}</ul></section>`;
+  }).join('')}</div>
+  <section style="display:grid;gap:12px" aria-labelledby="olh">
+    <div><h2 id="olh" style="font-size:1.25rem">Official NMMS Links</h2><p class="muted small" style="margin:4px 0 0">These open external official websites in a new tab. Documents on these sites are not copied into this app.</p></div>
+    <div class="olinks">${OFFICIAL_LINKS.map(l => `<div class="card olink"><span class="ext">External official website</span><h3 style="font-size:1.05rem">${esc(l.t)}</h3><p class="muted small" style="margin:0">${esc(l.d)}</p><code>${esc(l.url)}</code>
+      <a class="btn green" href="${esc(l.url)}" target="_blank" rel="noopener noreferrer external">Open Official Website ↗</a></div>`).join('')}</div>
+  </section>`;
+} };
+
+function renderFolder(m, T) {
+  const F = App.folder || (App.folder = { q: '', busy: '' });
+  const adm = App.isAdmin && S.admin;
+  const all = topicItems(T.id), q = norm(F.q);
+  const list = all.filter(x => !q || norm(x.title + x.description + x.name + matType(x)).includes(q));
+  m.innerHTML = `<div><a href="#materials" class="small">‹ All training materials</a></div>
+  <div class="page-head"><div><div class="muted small" style="font-weight:600">Day ${T.day} · ${esc(DAYS[T.day - 1].long)}</div><h1>${esc(T.t)}</h1><p>${esc(T.h)} · ${all.length} resource${all.length === 1 ? '' : 's'}</p></div></div>
+  ${adm ? `<div class="adminbar no-print" role="group" aria-label="Admin tools"><b class="small">Admin:</b>
+     <button class="btn sm" id="fUpload">Upload File</button><button class="btn sm sec" id="fImport">Import Files</button><button class="btn sm sec" id="fLink">Add Official Link</button>
+     <input type="file" id="fImpInput" multiple hidden accept="${ACCEPT}"><span class="small" id="fBusy">${esc(F.busy)}</span></div>` : ''}
+  ${all.length ? `<input class="input no-print" style="max-width:360px" id="fq" placeholder="Search in this folder" value="${esc(F.q)}" aria-label="Search resources">` : ''}
+  <div class="res-list">${list.map(x => {
+    const kind = x.kind === 'link' ? 'link' : (FILE_TYPES[ext(x.name)] || {}).video ? 'video' : ext(x.name) === 'pdf' ? 'pdf' : '';
+    return `<article class="card res"><div class="badge ${kind}">${esc(x.kind === 'link' ? 'LINK' : (ext(x.name) || 'FILE').toUpperCase())}</div><div style="min-width:0">
+      <h3>${esc(x.title)} ${adm && !x.published ? pill('neutral', 'Draft') : ''}</h3>
+      ${x.description ? `<p class="muted small" style="margin:4px 0 0">${esc(x.description)}</p>` : ''}
+      <div class="small muted" style="margin-top:4px">${x.kind === 'link' ? `External link · <span style="overflow-wrap:anywhere">${esc(x.url)}</span>` : `${esc(matType(x))} · ${fmtSize(x.size)} · uploaded ${esc(fmtDT(x.at))}`}</div>
+      <div class="acts">${x.kind === 'link' ? `<a class="btn sm green" href="${esc(x.url)}" target="_blank" rel="noopener noreferrer external">Open link ↗</a>`
+        : `<button class="btn sm" data-open="${esc(x.id)}">View / Open</button><button class="btn sm saff" data-present="${esc(x.id)}">Present on Digital Board</button><button class="btn sm sec" data-dl="${esc(x.id)}">Download</button>`}
+        ${adm ? `<button class="btn sm sec" data-edit="${esc(x.id)}">Edit</button>${x.kind === 'link' ? '' : `<button class="btn sm sec" data-rep="${esc(x.id)}">Replace File</button>`}<button class="btn sm danger" data-del="${esc(x.id)}">Delete</button>` : ''}</div></div></article>`;
+  }).join('') || `<div class="empty">${App.loading ? '<span class="spin"></span> Loading…' : all.length ? 'No resource matches the search.' : 'No training materials uploaded yet'}</div>`}</div>
+  <input type="file" id="repFile" hidden accept="${ACCEPT}">`;
+  const fq = $('#fq'); if (fq) fq.oninput = e => { F.q = e.target.value; const pos = e.target.selectionStart; renderFolder(m, T); const i = $('#fq'); i.focus(); i.setSelectionRange(pos, pos); };
+  const find = id => all.find(x => x.id === id);
+  $$('[data-open]', m).forEach(b => b.onclick = () => openViewer(find(b.dataset.open), false));
+  $$('[data-present]', m).forEach(b => b.onclick = () => presentResource(find(b.dataset.present)));
+  $$('[data-dl]', m).forEach(b => b.onclick = async () => { b.disabled = true; try { saveBlob(find(b.dataset.dl).name, await materialBlob(find(b.dataset.dl))); } catch (e) { toast(e.message, 'err'); } b.disabled = false; });
+  if (!adm) return;
+  $('#fUpload').onclick = () => uploadOneModal(T.id);
+  $('#fImport').onclick = () => $('#fImpInput').click();
+  $('#fImpInput').onchange = async e => {
+    const files = [...e.target.files]; e.target.value = ''; if (!files.length) return;
+    const bad = files.map(f => [f, checkLocalFile(f)]).filter(x => x[1]);
+    bad.forEach(([f, why]) => toast(f.name + ': ' + why, 'err'));
+    const good = files.filter(f => !checkLocalFile(f));
+    const base = all.reduce((mx, x) => Math.max(mx, x.order), 0);
+    await uploadBatch(good.map((f, i) => ({ file: f, title: f.name.replace(/\.[^.]+$/, '').replace(/[_-]+/g, ' '), description: '', topic: T.id, order: base + (i + 1) * 10, published: true })), msg => { F.busy = msg; const el = $('#fBusy'); if (el) el.textContent = msg; });
+    F.busy = '';
+  };
+  $('#fLink').onclick = () => linkModal(T.id, null);
+  $$('[data-edit]', m).forEach(b => b.onclick = () => { const x = find(b.dataset.edit); x.kind === 'link' ? linkModal(T.id, x) : editMaterialModal(x); });
+  $$('[data-rep]', m).forEach(b => b.onclick = () => replaceMaterialFlow(find(b.dataset.rep)));
+  $$('[data-del]', m).forEach(b => b.onclick = () => deleteMaterialModal(find(b.dataset.del)));
+}
+
+/* Shared admin actions (used by the folder pages and Import Documents). */
+function topicOptions(sel) { return MAT_DAYS.map(d => `<optgroup label="Day ${d.n} · ${esc(DAYS[d.n - 1].long)}">${d.topics.map(t => `<option value="${t.id}" ${t.id === sel ? 'selected' : ''}>${esc(t.t)}</option>`).join('')}</optgroup>`).join(''); }
+function metaOf(x) { return { title: x.title, description: x.description, topic: x.topic, category: x.category, order: x.order, published: x.published, url: x.url }; }
+async function uploadBatch(items, progress) {
+  let ok = 0;
+  for (let i = 0; i < items.length; i++) {
+    const it = items[i];
+    progress && progress(`Uploading ${i + 1} of ${items.length}: ${it.file.name}…`);
+    try {
+      const data = await fileToB64(it.file);
+      await api('uploadMaterial', { meta: { title: it.title, description: it.description, topic: it.topic, category: it.category || 'Other', order: it.order, published: it.published }, file: { name: it.file.name, mime: FILE_TYPES[ext(it.file.name)].mime, data } });
+      ok++; it.done = true;
+    } catch (e) { it.err = e.message; toast(it.file.name + ': ' + e.message, 'err'); }
+  }
+  progress && progress('');
+  if (ok) toast(ok + ' file(s) uploaded ✓');
+  await refreshAll();
+  return ok;
+}
+function uploadOneModal(topic) {
+  showModal(`<h2>Upload File</h2><p class="muted small" style="margin:0">Folder: <b>${esc(TOPIC_MAP[topic].t)}</b> · PDF, DOC/DOCX, PPT/PPTX, XLS/XLSX, images (10 MB) or MP4/WebM video (25 MB)</p>
+    <form id="uf" style="display:grid;gap:10px" novalidate>
+      <div class="field"><label for="uFile">File</label><input class="input" type="file" id="uFile" accept="${ACCEPT}" required></div>
+      <div class="field"><label for="uT">Title</label><input class="input" id="uT" maxlength="150"></div>
+      <div class="field"><label for="uD">Description (optional)</label><textarea class="input" id="uD" maxlength="500"></textarea></div>
+      <label class="consent"><input type="checkbox" id="uP" checked><span>Publish now (visible to participants)</span></label>
+      <div id="uErr"></div><div class="row"><button class="btn" id="uGo">Upload</button><button type="button" class="btn sec" id="uPrev">Preview</button><button type="button" class="btn sec" data-close>Cancel</button></div></form>`, box => {
+    const f = () => $('#uFile').files[0];
+    $('#uFile').onchange = () => { const x = f(); if (x && !$('#uT').value) $('#uT').value = x.name.replace(/\.[^.]+$/, '').replace(/[_-]+/g, ' '); $('#uErr').innerHTML = x && checkLocalFile(x) ? `<div class="notice err">${esc(checkLocalFile(x))}</div>` : ''; };
+    $('#uPrev').onclick = () => { const x = f(); if (x && !checkLocalFile(x)) openViewer({ id: 'local', name: x.name, title: ($('#uT').value || x.name) + ' (preview)', localFile: x }, false); };
+    $('#uf', box).onsubmit = async e => {
+      e.preventDefault(); const x = f();
+      if (!x) { $('#uErr').innerHTML = '<div class="notice err">Choose a file.</div>'; return; }
+      const bad = checkLocalFile(x); if (bad) { $('#uErr').innerHTML = `<div class="notice err">${esc(bad)}</div>`; return; }
+      $('#uGo').disabled = true; $('#uGo').innerHTML = '<span class="spin"></span> Uploading…';
+      const items = [{ file: x, title: $('#uT').value.trim() || x.name, description: $('#uD').value.trim(), topic, order: topicItems(topic).reduce((mx, y) => Math.max(mx, y.order), 0) + 10, published: $('#uP').checked }];
+      const ok = await uploadBatch(items);
+      if (ok) closeModal(); else { $('#uErr').innerHTML = `<div class="notice err">${esc(items[0].err || 'Upload failed.')}</div>`; $('#uGo').disabled = false; $('#uGo').textContent = 'Upload'; }
+    };
+  });
+}
+function linkModal(topic, x) {
+  showModal(`<h2>${x ? 'Edit link' : 'Add Official Link'}</h2><p class="muted small" style="margin:0">Folder: <b>${esc(TOPIC_MAP[topic].t)}</b>. Only https:// links are accepted.</p>
+    <form id="lkf" style="display:grid;gap:10px" novalidate>
+      <div class="field"><label for="lkT">Title</label><input class="input" id="lkT" maxlength="150" value="${esc(x ? x.title : '')}"></div>
+      <div class="field"><label for="lkU">Link (https://…)</label><input class="input" id="lkU" type="url" value="${esc(x ? x.url : '')}" placeholder="https://"></div>
+      <div class="field"><label for="lkD">Description (optional)</label><textarea class="input" id="lkD" maxlength="500">${esc(x ? x.description : '')}</textarea></div>
+      <label class="consent"><input type="checkbox" id="lkP" ${!x || x.published ? 'checked' : ''}><span>Published (visible to participants)</span></label>
+      <div id="lkErr"></div><div class="row"><button class="btn" id="lkGo">Save link</button><button type="button" class="btn sec" data-close>Cancel</button></div></form>`, box => {
+    $('#lkf', box).onsubmit = async e => {
+      e.preventDefault();
+      const meta = { title: $('#lkT').value.trim(), url: $('#lkU').value.trim(), description: $('#lkD').value.trim(), topic, category: 'Official link', order: x ? x.order : topicItems(topic).reduce((mx, y) => Math.max(mx, y.order), 0) + 10, published: $('#lkP').checked };
+      if (!meta.title) { $('#lkErr').innerHTML = '<div class="notice err">Give the link a title.</div>'; return; }
+      if (!/^https:\/\/[^\s"'<>]+$/.test(meta.url)) { $('#lkErr').innerHTML = '<div class="notice err">The link must start with https:// and contain no spaces.</div>'; return; }
+      $('#lkGo').disabled = true;
+      try { await api(x ? 'updateMaterial' : 'addLink', x ? { id: x.id, meta } : { meta }); closeModal(); toast('Link saved ✓'); await refreshAll(); }
+      catch (err) { $('#lkErr').innerHTML = `<div class="notice err">${esc(err.message)}</div>`; $('#lkGo').disabled = false; }
+    };
+  });
+}
+function editMaterialModal(x) {
+  showModal(`<h2>Edit resource</h2><form id="mf" style="display:grid;gap:10px">
+    <div class="field"><label for="mt">Title</label><input class="input" id="mt" value="${esc(x.title)}" maxlength="150"></div>
+    <div class="field"><label for="md">Description</label><textarea class="input" id="md" maxlength="500">${esc(x.description)}</textarea></div>
+    <div class="fgrid"><div class="field"><label for="mtp">Folder</label><select class="input" id="mtp">${topicOptions(x.topic)}</select></div>
+    <div class="field"><label for="mo">Display order</label><input class="input" id="mo" type="number" min="0" max="999" value="${x.order}"></div></div>
+    <label class="consent"><input type="checkbox" id="mp" ${x.published ? 'checked' : ''}><span>Published (visible to participants)</span></label>
+    <div id="mErr"></div><div class="row"><button class="btn" id="mSave">Save</button><button type="button" class="btn sec" data-close>Cancel</button></div></form>`, box => {
+    $('#mf', box).onsubmit = async e => {
+      e.preventDefault(); $('#mSave').disabled = true;
+      try { await api('updateMaterial', { id: x.id, meta: Object.assign(metaOf(x), { title: $('#mt').value, description: $('#md').value, topic: $('#mtp').value, order: +$('#mo').value, published: $('#mp').checked }) }); closeModal(); toast('Saved'); await refreshAll(); }
+      catch (err) { $('#mErr').innerHTML = `<div class="notice err">${esc(err.message)}</div>`; $('#mSave').disabled = false; }
+    };
+  });
+}
+function replaceMaterialFlow(x) {
+  const inp = $('#repFile');
+  inp.onchange = e => {
+    const f = e.target.files[0]; e.target.value = ''; if (!f) return;
+    const bad = checkLocalFile(f); if (bad) { toast(bad, 'err'); return; }
+    showModal(`<h2>Replace file?</h2><p>“${esc(x.title)}”: <b>${esc(x.name)}</b> will be replaced by <b>${esc(f.name)}</b> (${fmtSize(f.size)}). The old file moves to the Drive trash.</p><div id="rErr"></div><div class="row"><button class="btn" id="rGo">Replace</button><button class="btn sec" data-close>Cancel</button></div>`, box => {
+      $('#rGo', box).onclick = async () => {
+        $('#rGo').disabled = true; $('#rGo').innerHTML = '<span class="spin"></span> Replacing…';
+        try { const data = await fileToB64(f); await api('updateMaterial', { id: x.id, meta: metaOf(x), file: { name: f.name, mime: FILE_TYPES[ext(f.name)].mime, data } }); fileCache.delete(x.id); closeModal(); toast('File replaced'); await refreshAll(); }
+        catch (err) { $('#rErr').innerHTML = `<div class="notice err">${esc(err.message)}</div>`; $('#rGo').disabled = false; $('#rGo').textContent = 'Replace'; }
+      };
+    });
+  };
+  inp.click();
+}
+function deleteMaterialModal(x) {
+  showModal(`<h2>Delete resource?</h2><p>“${esc(x.title)}”${x.kind === 'link' ? ' (link)' : ` (${esc(x.name)}) will be removed from the app and its file moved to the Drive trash`}. Participants will no longer see it.</p><div id="dErr"></div><div class="row"><button class="btn danger" id="dGo">Delete</button><button class="btn sec" data-close>Cancel</button></div>`, box => {
+    $('#dGo', box).onclick = async () => {
+      $('#dGo').disabled = true;
+      try { await api('deleteMaterial', { id: x.id }); fileCache.delete(x.id); closeModal(); toast('Deleted'); await refreshAll(); }
+      catch (err) { $('#dErr').innerHTML = `<div class="notice err">${esc(err.message)}</div>`; $('#dGo').disabled = false; }
+    };
+  });
+}
+
+/* ---------- Document viewer ---------- */
+const V = { zoom: 1, page: 1, pages: 0, pdf: null, kind: '', blob: null, name: '', render: null, url: null };
+const fileCache = new Map();
+async function materialBlob(mt) {
+  if (mt.localFile) return mt.localFile;
+  if (mt.srcUrl) { const r = await fetch(mt.srcUrl); if (!r.ok) throw new Error('Could not load ' + mt.srcUrl); return r.blob(); }
+  if (fileCache.has(mt.id)) return fileCache.get(mt.id);
+  const j = await api('material', { id: mt.id });
+  const b = b64ToBlob(j.data, j.mime);
+  fileCache.set(mt.id, b);
+  return b;
+}
+function fallbackHTML(mt, why) {
+  return `<div class="vmsg"><h2 style="color:#fff">Preview is not available in the browser</h2><p>${why}</p><div class="row" style="justify-content:center"><button class="btn saff" id="vDl2">Download ${esc(mt.name)}</button><button class="btn sec" id="vExt">Open externally</button></div></div>`;
+}
+function bindFallback(mt, blob) {
+  const d = $('#vDl2'); if (d) d.onclick = () => saveBlob(mt.name, blob);
+  const o = $('#vExt'); if (o) o.onclick = () => { const u = URL.createObjectURL(blob); const w = window.open(u, '_blank', 'noopener'); if (!w) saveBlob(mt.name, blob); setTimeout(() => URL.revokeObjectURL(u), 60000); };
+}
+/* Global presentation viewer. openViewer(resource, fullScreen, present) is used by Training Materials,
+   Import Documents and the Home banner; present=true is the Digital Board mode. */
+function presentResource(mt) { openViewer(mt, true, true); }
+function presentBanner() { openViewer({ id: 'banner', name: 'nmms-banner.jpg', title: 'Training-cum-Workshop for INOs under NMMS Scheme (2026–27)', srcUrl: 'assets/nmms-banner.jpg', noDownload: true }, true, true); }
+async function openViewer(mt, full, present) {
+  if (!mt) return;
+  const vw = $('#viewer'), body = $('#vBody');
+  vw.classList.toggle('present', !!present); V.present = !!present;
+  if (V.url) URL.revokeObjectURL(V.url);
+  Object.assign(V, { zoom: 1, page: 1, pages: 0, pdf: null, kind: '', blob: null, name: mt.name, render: null, url: null });
+  $('#vTitle').textContent = mt.title || mt.name; $('#vPages').innerHTML = ''; $('#vDl').hidden = true;
+  body.style.alignItems = 'flex-start';
+  body.innerHTML = '<div class="vmsg"><span class="spin"></span> Loading…</div>';
+  vw.hidden = false; document.body.style.overflow = 'hidden'; $('#vExit').focus();
+  if (full) goFull();
+  try {
+    const blob = await materialBlob(mt); V.blob = blob;
+    $('#vDl').hidden = !!mt.noDownload; $('#vDl').onclick = () => saveBlob(mt.name, blob);
+    const e = ext(mt.name);
+    if (e === 'pdf') {
+      V.kind = 'pdf';
+      await loadScript(LIB.pdfWorker); await loadScript(LIB.pdf);
+      const lib = window.pdfjsLib; lib.GlobalWorkerOptions.workerSrc = LIB.pdfWorker;
+      V.pdf = await lib.getDocument({ data: new Uint8Array(await blob.arrayBuffer()) }).promise;
+      V.pages = V.pdf.numPages;
+      $('#vPages').innerHTML = `<button id="vPrev" aria-label="Previous page">‹</button><span id="vPg" style="min-width:64px;text-align:center"></span><button id="vNext" aria-label="Next page">›</button>`;
+      $('#vPrev').onclick = () => { if (V.page > 1) { V.page--; V.render(); } };
+      $('#vNext').onclick = () => { if (V.page < V.pages) { V.page++; V.render(); } };
+      V.render = async () => {
+        $('#vPg').textContent = V.page + ' / ' + V.pages;
+        const pg = await V.pdf.getPage(V.page);
+        const base = pg.getViewport({ scale: 1 });
+        const fit = V.present ? Math.min(body.clientWidth / base.width, body.clientHeight / base.height) : Math.min((body.clientWidth - 32) / base.width, (body.clientHeight - 32) / base.height * 1.6, 3);
+        const vp = pg.getViewport({ scale: Math.max(0.3, fit) * V.zoom });
+        const dpr = Math.min(window.devicePixelRatio || 1, 2);
+        const c = document.createElement('canvas'); c.width = vp.width * dpr; c.height = vp.height * dpr; c.style.width = vp.width + 'px'; c.style.height = vp.height + 'px';
+        await pg.render({ canvasContext: c.getContext('2d'), viewport: vp, transform: dpr !== 1 ? [dpr, 0, 0, dpr, 0, 0] : null }).promise;
+        body.innerHTML = ''; body.appendChild(c); body.scrollTop = 0;
+      };
+    } else if (blob.type.startsWith('image/')) {
+      V.kind = 'img'; V.url = URL.createObjectURL(blob); body.style.alignItems = 'center';
+      V.render = () => { body.innerHTML = `<img class="imgv" alt="${esc(mt.title)}" src="${V.url}" style="${V.zoom === 1 ? (V.present ? '' : 'max-height:calc(100vh - 120px)') : `max-width:none;max-height:none;width:${V.zoom * 100}%`}">`; };
+    } else if (blob.type.startsWith('video/')) {
+      V.kind = 'video'; V.url = URL.createObjectURL(blob); body.style.alignItems = 'center';
+      V.render = () => {
+        body.innerHTML = `<video controls playsinline preload="metadata" src="${V.url}" style="${V.present ? '' : 'max-width:100%;max-height:calc(100vh - 120px);'}background:#000"></video>`;
+        $('video', body).onerror = () => { body.innerHTML = fallbackHTML(mt, 'This browser cannot play this video format. Download it and play it in a media player.'); bindFallback(mt, blob); };
+      };
+    } else if (e === 'docx') {
+      V.kind = 'html';
+      await loadScript(LIB.mammoth);
+      const out = await window.mammoth.convertToHtml({ arrayBuffer: await blob.arrayBuffer() });
+      const html = sanitizeHTML(out.value);
+      V.render = () => { body.innerHTML = `<div class="doc" style="font-size:${V.zoom}rem">${html || '<p>This document has no readable text.</p>'}</div>`; };
+    } else if (e === 'xlsx' || e === 'xls') {
+      V.kind = 'html';
+      await loadScript(LIB.xlsx);
+      const wb = window.XLSX.read(await blob.arrayBuffer(), { type: 'array' });
+      let sheet = wb.SheetNames[0];
+      $('#vPages').innerHTML = wb.SheetNames.length > 1 ? `<select id="vSheet" style="min-height:38px;border-radius:6px" aria-label="Sheet">${wb.SheetNames.map(n => `<option>${esc(n)}</option>`).join('')}</select>` : '';
+      if ($('#vSheet')) $('#vSheet').onchange = ev => { sheet = ev.target.value; V.render(); };
+      V.render = () => { body.innerHTML = `<div class="doc" style="font-size:${V.zoom * 0.9}rem;max-width:none">${sanitizeHTML(window.XLSX.utils.sheet_to_html(wb.Sheets[sheet]))}</div>`; };
+    } else {
+      V.kind = 'none';
+      const why = e === 'doc' ? 'Older Word (.doc) files cannot be shown in a browser. Download the file and open it in Word, Google Docs or WPS Office, or ask the organiser to upload a PDF or DOCX copy.'
+        : 'PowerPoint files cannot be shown in a browser. Download the file and open it in PowerPoint, Google Slides or WPS Office, or ask the organiser to upload a PDF copy.';
+      V.render = () => { body.innerHTML = fallbackHTML(mt, why); bindFallback(mt, blob); };
+    }
+    await V.render(); updZoom();
+  } catch (err) {
+    V.kind = 'none'; updZoom();
+    body.innerHTML = `<div class="vmsg"><h2 style="color:#fff">The document could not be opened</h2><p>${esc(err.message || String(err))}</p>${V.blob ? '<div class="row" style="justify-content:center"><button class="btn saff" id="vDl2">Download instead</button></div>' : ''}</div>`;
+    if (V.blob) bindFallback(mt, V.blob);
+  }
+}
+function updZoom() { $('#vZoom').textContent = Math.round(V.zoom * 100) + '%'; const n = V.kind === 'none' || V.kind === 'video'; $('#vZoomIn').hidden = n; $('#vZoomOut').hidden = n; $('#vZoom').hidden = n; }
+$('#vZoomIn').onclick = () => { V.zoom = Math.min(4, +(V.zoom + 0.25).toFixed(2)); updZoom(); V.render && V.render(); };
+$('#vZoomOut').onclick = () => { V.zoom = Math.max(0.5, +(V.zoom - 0.25).toFixed(2)); updZoom(); V.render && V.render(); };
+function goFull() { const v = $('#viewer'); if (document.fullscreenElement) return; const fn = v.requestFullscreen || v.webkitRequestFullscreen; if (!fn) return; try { const p = fn.call(v); if (p && p.catch) p.catch(() => {}); } catch (e) {} }
+$('#vFull').onclick = () => { if (document.fullscreenElement) document.exitFullscreen().catch(() => {}); else goFull(); };
+document.addEventListener('fullscreenchange', () => { $('#vFull').textContent = document.fullscreenElement ? 'Exit Full Screen' : 'Full Screen'; setTimeout(() => V.render && V.kind === 'pdf' && V.render(), 120); });
+function closeViewer() { if (document.fullscreenElement) document.exitFullscreen().catch(() => {}); $('#viewer').hidden = true; $('#viewer').classList.remove('present'); $('#vBody').innerHTML = ''; document.body.style.overflow = ''; V.pdf = null; if (V.url) { URL.revokeObjectURL(V.url); V.url = null; } }
+$('#vExit').onclick = closeViewer;
+document.addEventListener('keydown', e => {
+  if ($('#viewer').hidden) { if (e.key === 'Escape' && !$('#modal').hidden) closeModal(); return; }
+  if (e.key === 'Escape' && !document.fullscreenElement) closeViewer();
+  if (V.kind === 'pdf' && (e.key === 'ArrowRight' || e.key === 'PageDown') && V.page < V.pages) { V.page++; V.render(); }
+  if (V.kind === 'pdf' && (e.key === 'ArrowLeft' || e.key === 'PageUp') && V.page > 1) { V.page--; V.render(); }
+});
+
+/* ---------- Pre / Post Test ---------- */
+function testView(type) {
+  const T = App.test[type], name = type === 'pre' ? 'Pre-Test' : 'Post-Test';
+  const draftKey = 'nmms26_draft_' + type;
+  return { live: true, render(m) {
+    const formUrl = S.settings[type + 'FormUrl'];
+    const open = S.settings[type + 'Open'] !== 'no';
+    const head = `<div class="page-head"><div><h1>${name}</h1><p>12 questions · maximum 20 marks · same questions in Pre-Test and Post-Test</p></div></div>
+      <div class="notice saff" role="note">Note: Google Form must be generated by DIETs.${formUrl ? ` <a href="${esc(formUrl)}" target="_blank" rel="noopener">Open the DIET Google Form ›</a>` : ''}</div>`;
+    if (!open) { m.innerHTML = head + `<div class="notice info">The ${name} is closed at the moment. Please wait for the organiser's instruction.</div>`; return; }
+    if (T.step === 'select') {
+      const list = searchPeople(T.q, '');
+      m.innerHTML = head + `<div class="card" style="display:grid;gap:12px"><div class="field"><label for="tq">Select your name / अपना नाम चुनें</label><input class="input" id="tq" autocomplete="off" placeholder="Type your name or school" value="${esc(T.q)}"></div>
+        <div class="plist">${list.map(p => { const done = S.testmarks[p.id + '_' + type]; return `<button class="pbtn" data-pid="${esc(p.id)}"><b>${esc(p.name)}</b>${done ? pill('present', 'Submitted') : pill('neutral', 'Not submitted')}<span>${esc(p.school)} · ${esc(p.block)}</span></button>`; }).join('') || `<div class="empty">${App.loading ? '<span class="spin"></span> Loading…' : 'No matching name.'}</div>`}</div></div>`;
+      $('#tq').oninput = e => { T.q = e.target.value; this.render(m); const i = $('#tq'); i.focus(); i.setSelectionRange(i.value.length, i.value.length); };
+      $$('[data-pid]', m).forEach(b => b.onclick = () => {
+        T.pid = b.dataset.pid; const d = store.get(draftKey, null);
+        T.answers = d && d.pid === T.pid ? d.answers : {};
+        T.step = S.testmarks[T.pid + '_' + type] ? 'done' : 'answer'; T.result = S.testmarks[T.pid + '_' + type] ? { duplicate: true } : null;
+        this.render(m);
+      });
+      return;
+    }
+    const p = S.pmap[T.pid];
+    if (T.step === 'done') {
+      const res = T.result || {};
+      m.innerHTML = head + `<div class="card success"><div class="big">${res.queued ? 'Saved on this device' : res.duplicate ? `${name} already submitted` : `${name} submitted ✓`}</div>
+        <div style="font-weight:700;font-size:1.1rem">${esc(p.name)}</div><div class="muted">${esc(p.school)} · ${esc(p.block)}</div>
+        ${res.queued ? '<div class="notice warn">The internet connection failed. Your answers are kept on this device and will be sent automatically.</div>' : '<p class="muted">Thank you. Results are reviewed by the training team.</p>'}
+        <button class="btn" id="tNext">Done</button></div>`;
+      $('#tNext').onclick = () => { Object.assign(T, { step: 'select', q: '', pid: null, answers: {}, result: null }); this.render(m); };
+      return;
+    }
+    const A = T.answers;
+    m.innerHTML = head + `<div class="verify"><span class="muted small">Answering as</span><b>${esc(p.name)}</b><span>${esc(p.school)} · ${esc(p.block)}</span><div><button class="btn sm sec" id="tChange">Not me — change</button></div></div>
+     <form id="tf" style="display:grid;gap:12px" novalidate>
+     ${QUESTIONS.map(q => `<fieldset class="q" id="q${q.n}" style="margin:0"><legend class="sr">Question ${q.n}</legend><h3><span class="qn">Q${q.n}</span><span>${esc(q.q)}</span></h3>
+       <div class="meta">${q.m} mark${q.m > 1 ? 's' : ''} · ${q.t === 'multi' ? 'Select all that apply (more than one option can be selected)' : q.t === 'single' ? 'Choose one option' : 'Short answer'}</div>
+       ${q.t === 'text' ? `<textarea class="input" id="q12t" maxlength="300" placeholder="Name, phone number, email ID">${esc(A.q12 || '')}</textarea><div class="small muted" id="q12hint"></div>`
+         : q.o.map((o, i) => `<label class="opt"><input type="${q.t === 'multi' ? 'checkbox' : 'radio'}" name="q${q.n}" value="${i}" ${q.t === 'multi' ? ((A['q' + q.n] || []).includes(i) ? 'checked' : '') : (A['q' + q.n] === i ? 'checked' : '')}><span>${i + 1}. ${esc(o)}</span></label>`).join('')}
+     </fieldset>`).join('')}
+     <div class="submitbar"><span id="tProg" class="small" style="font-weight:600"></span><button class="btn green lg" id="tSubmit" ${T.busy ? 'disabled' : ''}>${T.busy ? '<span class="spin"></span> Submitting…' : 'Submit ' + name}</button></div></form>`;
+    const prog = () => { const n = QUESTIONS.slice(0, 11).filter(q => q.t === 'multi' ? (A['q' + q.n] || []).length : A['q' + q.n] !== undefined && A['q' + q.n] !== null).length; $('#tProg').textContent = n + ' of 11 required questions answered'; };
+    const q12hint = () => { const v = A.q12 || ''; const h = $('#q12hint'); if (!v.trim()) { h.textContent = 'Optional if your answer to Q11 is “No”.'; return; } const ph = /(?:^|\D)[6-9]\d{9}(?:\D|$)/.test(v.replace(/[\s-]/g, ' ')), em = /[^\s@]+@[^\s@]+\.[^\s@]+/.test(v); h.textContent = ph || em ? '' : 'Tip: include a 10-digit phone number or an email ID.'; };
+    $('#tf').addEventListener('change', e => {
+      const t = e.target; if (!t.name) return; const n = +t.name.slice(1), q = QUESTIONS[n - 1];
+      if (q.t === 'multi') A['q' + n] = $$(`input[name="q${n}"]:checked`).map(x => +x.value); else A['q' + n] = +t.value;
+      $('#q' + n).classList.remove('missing'); store.set(draftKey, { pid: T.pid, answers: A }); prog();
+    });
+    $('#q12t').oninput = e => { A.q12 = e.target.value; store.set(draftKey, { pid: T.pid, answers: A }); q12hint(); };
+    prog(); q12hint();
+    $('#tChange').onclick = () => { Object.assign(T, { step: 'select', pid: null, answers: {} }); this.render(m); };
+    $('#tf').onsubmit = async e => {
+      e.preventDefault();
+      const miss = QUESTIONS.slice(0, 11).filter(q => q.t === 'multi' ? !(A['q' + q.n] || []).length : A['q' + q.n] === undefined || A['q' + q.n] === null);
+      $$('.q.missing').forEach(x => x.classList.remove('missing'));
+      if (miss.length) { miss.forEach(q => $('#q' + q.n).classList.add('missing')); $('#q' + miss[0].n).scrollIntoView({ behavior: 'smooth', block: 'center' }); toast('Please answer Q' + miss.map(q => q.n).join(', Q'), 'err'); return; }
+      const payload = { type, pid: T.pid, answers: Object.assign({}, A, { q12: (A.q12 || '').trim() }) };
+      T.busy = true; this.render(m);
+      try {
+        const j = await api('submitTest', payload);
+        T.result = { duplicate: j.duplicate }; T.step = 'done'; store.set(draftKey, null);
+        S.testmarks[T.pid + '_' + type] = { pid: T.pid, type }; loadPublic();
+      } catch (err) {
+        if (err.code === 'network') { queueSend('submitTest', payload, name + ' · ' + p.name); T.result = { queued: true }; T.step = 'done'; store.set(draftKey, null); }
+        else toast(err.message, 'err');
+      }
+      T.busy = false; this.render(m);
+    };
+  } };
+}
+VIEWS['pre-test'] = testView('pre');
+VIEWS['post-test'] = testView('post');
+
+/* ---------- Lock: Training Materials, Dashboard, Import Documents ---------- */
+// The password is checked by the Apps Script server (script property ADMIN_PASSWORD); the browser never holds it.
+// A correct password returns a 2-hour session token that the server requires for every protected API call.
+VIEWS.login = { render(m) {
+  if (App.isAdmin) { m.innerHTML = `<div class="notice ok">Protected modules are unlocked. <a href="#materials">Training Materials</a> · <a href="#dashboard">Dashboard</a> · <a href="#import">Import Documents</a></div>`; return; }
+  lockCard(m, 'Protected modules');
+} };
+function lockCard(m, title) {
+  m.innerHTML = `<div class="card" style="max-width:480px;width:100%;justify-self:center;display:grid;gap:10px;text-align:center">
+    <div style="font-size:2.2rem" aria-hidden="true">🔒</div><h1 style="font-size:1.3rem">${esc(title)} — locked</h1>
+    <p class="muted" style="margin:0">Training Materials, Dashboard and Import Documents open after the training team password is entered.</p>
+    <div><button class="btn" id="gUnlock">Enter password</button></div></div>`;
+  $('#gUnlock').onclick = () => unlockModal();
+}
+function unlockModal() {
+  if (!$('#modal').hidden) return;
+  showModal(`<h2>🔒 Enter password</h2><p class="muted small" style="margin:0">Unlocks Training Materials, Dashboard and Import Documents on this device for 2 hours, or until you press Lock.</p>
+    <form id="uLk" style="display:grid;gap:10px" novalidate><div class="field"><label for="uPw">Password</label><input class="input" id="uPw" type="password" inputmode="numeric" autocomplete="current-password"></div>
+    <div id="uLkErr" role="alert"></div><div class="row"><button class="btn" id="uLkGo">Unlock</button><button type="button" class="btn sec" data-close>Cancel</button></div></form>`, box => {
+    $('#uLk', box).onsubmit = async e => {
+      e.preventDefault();
+      const b = $('#uLkGo'), pw = $('#uPw').value;
+      if (!pw) { $('#uLkErr').innerHTML = '<div class="notice err">Please enter the password.</div>'; return; }
+      b.disabled = true; b.innerHTML = '<span class="spin"></span> Checking…'; $('#uLkErr').innerHTML = '';
+      try {
+        const j = await api('login', { password: pw });
+        App.token = j.token; store.sset('nmms26_tok', j.token);
+        await loadAdmin(); closeModal(); toast('Unlocked ✓'); renderShell(); rerender(true);
+      } catch (err) {
+        $('#uLkErr').innerHTML = `<div class="notice err">${esc(err.code === 'auth' ? 'Incorrect password. Please try again.' : err.message)}</div>`;
+        b.disabled = false; b.textContent = 'Unlock'; $('#uPw').select();
+      }
+    };
+  });
+}
+function adminGate(m) {
+  if (App.isAdmin && S.admin) return true;
+  if (App.token && !S.admin) { m.innerHTML = '<div class="empty"><span class="spin"></span> Checking access…</div>'; return false; }
+  lockCard(m, ROUTES[App.route].t);
+  if (App.gatePrompted !== App.route) { App.gatePrompted = App.route; unlockModal(); }
+  return false;
+}
+
+/* ---------- Dashboard ---------- */
+const MAX_MARKS = 20;
+const pctOf = t => t ? Math.round(t.total * 1000 / MAX_MARKS) / 10 : '';
+function attDetail(p) {
+  const days = DAYS.map(d => {
+    const a = S.admin.att[p.id + '_d' + d.n] || null;
+    return { n: d.n, st: attStatus(p.id, d.n), at: a && a.status === 'present' ? a.at : '', photo: !!(a && a.hasPhoto), key: p.id + '_' + d.date, corr: a ? a.correction : '' };
+  });
+  const present = days.filter(x => x.st === 'present').length;
+  const overall = present === 3 ? 'Present all 3 days' : present ? `Present ${present} of 3 days` : 'Not yet marked';
+  return {
+    id: p.id, name: p.name, mobile: S.admin.contacts[p.id] || '', school: p.school, block: p.block, days, present, overall,
+    last: days.map(x => x.at).filter(Boolean).sort().pop() || '',
+    remarks: days.filter(x => x.corr).map(x => `Day ${x.n}: ${x.corr}`).join(' | ')
+  };
+}
+function testDetail(p) {
+  const a = S.admin.pre[p.id], b = S.admin.post[p.id];
+  return {
+    id: p.id, name: p.name, mobile: S.admin.contacts[p.id] || '', school: p.school, block: p.block, pre: a, post: b,
+    preScore: a ? a.total : '', prePct: pctOf(a), preAt: a ? a.at : '', postScore: b ? b.total : '', postPct: pctOf(b), postAt: b ? b.at : '',
+    diff: a && b ? b.total - a.total : '',
+    status: a && b ? 'Both completed' : a ? 'Pre-Test only' : b ? 'Post-Test only' : 'Not yet submitted'
+  };
+}
+const ATT_STATUS = [['', 'All participants'], ['today-present', 'Present today'], ['today-missing', 'Not marked today'], ['all3', 'Present all 3 days'], ['partial', 'Present on some days'], ['none', 'Not yet marked']];
+const TEST_STATUS = [['', 'All participants'], ['Both completed', 'Both tests completed'], ['Pre-Test only', 'Pre-Test only'], ['Post-Test only', 'Post-Test only'], ['Not yet submitted', 'Not yet submitted'], ['pre-pending', 'Pre-Test pending'], ['post-pending', 'Post-Test pending']];
+function filterPeople(F) {
+  const q = norm(F.q);
+  return S.participants.filter(p => (!F.block || p.block === F.block) && (!F.school || p.school === F.school) &&
+    (!q || norm([p.id, p.name, p.school, p.block, S.admin.contacts[p.id] || ''].join(' ')).includes(q)));
+}
+function attRows() {
+  const F = App.dash.f1, td = todayDay();
+  let rows = filterPeople(F).map(attDetail);
+  if (F.status === 'today-present') rows = rows.filter(r => td && r.days[td - 1].st === 'present');
+  if (F.status === 'today-missing') rows = rows.filter(r => td && r.days[td - 1].st !== 'present');
+  if (F.status === 'all3') rows = rows.filter(r => r.present === 3);
+  if (F.status === 'partial') rows = rows.filter(r => r.present > 0 && r.present < 3);
+  if (F.status === 'none') rows = rows.filter(r => r.present === 0);
+  return sortRows(rows, App.dash.sort.att);
+}
+function testRows() {
+  const F = App.dash.f2;
+  let rows = filterPeople(F).map(testDetail);
+  if (F.status === 'pre-pending') rows = rows.filter(r => !r.pre);
+  else if (F.status === 'post-pending') rows = rows.filter(r => !r.post);
+  else if (F.status) rows = rows.filter(r => r.status === F.status);
+  return sortRows(rows, App.dash.sort.test);
+}
+function sortRows(rows, s) {
+  if (!s) return rows;
+  return rows.slice().sort((a, b) => {
+    const x = a[s.c], y = b[s.c];
+    if (x === '' && y !== '') return 1; if (y === '' && x !== '') return -1;
+    const c = typeof x === 'number' && typeof y === 'number' ? x - y : String(x).localeCompare(String(y), 'en', { numeric: true });
+    return s.d * c;
+  });
+}
+function filterBar(id, F, statuses) {
+  const schools = [...new Set(S.participants.filter(p => !F.block || p.block === F.block).map(p => p.school))].sort();
+  return `<div class="row no-print" style="align-items:end">
+    <div class="field" style="flex:2;min-width:200px"><label for="${id}q">Search</label><input class="input" id="${id}q" placeholder="Name, mobile, school, ID" value="${esc(F.q)}"></div>
+    <div class="field" style="min-width:140px"><label for="${id}b">Block</label><select class="input" id="${id}b"><option value="">All blocks</option>${BLOCKS.map(b => `<option ${b === F.block ? 'selected' : ''}>${b}</option>`).join('')}</select></div>
+    <div class="field" style="min-width:180px;max-width:260px"><label for="${id}s">School / Office</label><select class="input" id="${id}s"><option value="">All schools / offices</option>${schools.map(x => `<option ${x === F.school ? 'selected' : ''}>${esc(x)}</option>`).join('')}</select></div>
+    <div class="field" style="min-width:180px"><label for="${id}t">Status</label><select class="input" id="${id}t">${statuses.map(([v, l]) => `<option value="${esc(v)}" ${v === F.status ? 'selected' : ''}>${esc(l)}</option>`).join('')}</select></div>
+  </div>`;
+}
+function bindFilters(P, id, F, again) {
+  $('#' + id + 'q', P).oninput = e => { F.q = e.target.value; const pos = e.target.selectionStart; again(); const i = $('#' + id + 'q', P); i.focus(); i.setSelectionRange(pos, pos); };
+  $('#' + id + 'b', P).onchange = e => { F.block = e.target.value; F.school = ''; again(); };
+  $('#' + id + 's', P).onchange = e => { F.school = e.target.value; again(); };
+  $('#' + id + 't', P).onchange = e => { F.status = e.target.value; again(); };
+}
+const th = (key, label, s, cls) => `<th class="${cls || ''}" aria-sort="${s && s.c === key ? (s.d > 0 ? 'ascending' : 'descending') : 'none'}"><button data-sort="${key}">${esc(label)}${s && s.c === key ? (s.d > 0 ? ' ▲' : ' ▼') : ''}</button></th>`;
+function bindSort(P, which, again) { $$('[data-sort]', P).forEach(b => b.onclick = () => { const s = App.dash.sort[which]; App.dash.sort[which] = { c: b.dataset.sort, d: s && s.c === b.dataset.sort ? -s.d : 1 }; again(); }); }
+
+function renderAttTable(P) {
+  const rows = attRows(), all = S.participants.map(attDetail), td = todayDay(), s = App.dash.sort.att;
+  const elapsed = DAYS.filter(d => d.date <= todayISO()).map(d => d.n);
+  const presentAny = all.filter(r => r.present > 0).length, presentDays = all.reduce((n, r) => n + elapsed.filter(d => r.days[d - 1].st === 'present').length, 0);
+  const possible = all.length * elapsed.length;
+  P.innerHTML = `<div><h2>Attendance Details</h2><p class="muted small" style="margin:4px 0 0">One row per participant with the three workshop days in separate columns. Corrections are kept in Remarks. Mobile numbers are visible only after unlocking.</p></div>
+   <div class="row small" style="gap:16px"><span><b>${all.length}</b> registered</span><span><b>${presentAny}</b> present on at least one day</span>${td ? `<span><b>${all.filter(r => r.days[td - 1].st === 'present').length}</b> present today (Day ${td})</span>` : ''}<span>Attendance <b>${possible ? Math.round(presentDays * 100 / possible) + '%' : '—'}</b>${possible ? ` (${presentDays} of ${possible} participant-days so far)` : ''}</span></div>
+   ${filterBar('a', App.dash.f1, ATT_STATUS)}
+   <div class="row no-print" style="justify-content:space-between"><span class="small muted">${rows.length} of ${all.length} participants shown</span><div class="row"><button class="btn sec" data-exp="csv">Export CSV (Excel)</button><button class="btn sec" data-exp="xlsx">Download .xlsx</button></div></div>
+   <div class="tbl-wrap"><table class="wide"><thead><tr><th class="num">S.No.</th>${th('id', 'ID', s)}${th('name', 'Participant Name', s)}<th>Mobile</th>${th('school', 'School / Office', s)}${th('block', 'Block', s)}${DAYS.map(d => `<th>Day ${d.n}<br><small>${d.date.slice(8)} Oct 2026</small></th>`).join('')}${th('present', 'Attendance Status', s)}${th('last', 'Last Check-in', s)}<th>Remarks</th></tr></thead><tbody>
+   ${rows.map((r, i) => `<tr><td class="num">${i + 1}</td><td>${esc(r.id)}</td><td><b>${esc(r.name)}</b></td><td>${esc(r.mobile) || '<span class="muted">—</span>'}</td><td>${esc(r.school)}</td><td>${esc(r.block)}</td>
+     ${r.days.map(x => `<td style="min-width:120px">${statusPill(x.st)}${x.at ? `<div class="small">${esc(fmtT(x.at))}</div>` : ''}<div class="row no-print" style="gap:4px;margin-top:4px">${x.photo ? `<button class="btn sm sec" data-photo="${esc(x.key)}" title="View attendance photo">Photo</button>` : ''}<button class="btn sm sec" data-correct="${esc(r.id)}|${x.n}" title="Correct this day">Correct</button></div></td>`).join('')}
+     <td>${pill(r.present === 3 ? 'present' : r.present ? 'pending' : 'absent', r.overall)}</td><td class="small">${r.last ? esc(fmtDT(r.last)) : '<span class="muted">—</span>'}</td><td class="small" style="min-width:160px">${esc(r.remarks) || '<span class="muted">—</span>'}</td></tr>`).join('') || `<tr><td colspan="13" class="muted">No participant matches the filters.</td></tr>`}
+   </tbody></table></div>`;
+  const again = () => renderAttTable(P);
+  bindFilters(P, 'a', App.dash.f1, again); bindSort(P, 'att', again);
+  $$('[data-exp]', P).forEach(b => b.onclick = () => exportAtt(rows, b.dataset.exp));
+  $$('[data-photo]', P).forEach(b => b.onclick = () => photoModal(b, b.dataset.photo));
+  $$('[data-correct]', P).forEach(b => b.onclick = () => { const [pid, dn] = b.dataset.correct.split('|'); correctModal(pid, +dn); });
+}
+function renderTestTable(P) {
+  const rows = testRows(), all = S.participants.map(testDetail), s = App.dash.sort.test;
+  const pre = all.filter(r => r.pre), post = all.filter(r => r.post), both = all.filter(r => r.pre && r.post);
+  const avg = a => a.length ? (a.reduce((n, x) => n + x, 0) / a.length).toFixed(1) : '—';
+  P.innerHTML = `<div><h2>Pre-Test &amp; Post-Test Details</h2><p class="muted small" style="margin:4px 0 0">Scores are calculated on the server from the stored answers (maximum ${MAX_MARKS} marks). Missing tests are shown as not submitted, not as zero. The .xlsx download also contains question-wise marks for each test.</p></div>
+   <div class="row small" style="gap:16px"><span>Pre-Test <b>${pre.length}</b>/${all.length} · average <b>${avg(pre.map(r => r.pre.total))}</b>/${MAX_MARKS}</span><span>Post-Test <b>${post.length}</b>/${all.length} · average <b>${avg(post.map(r => r.post.total))}</b>/${MAX_MARKS}</span><span>Both completed <b>${both.length}</b> · average improvement <b>${both.length ? (both.reduce((n, r) => n + r.diff, 0) / both.length >= 0 ? '+' : '') + avg(both.map(r => r.diff)) : '—'}</b></span></div>
+   ${filterBar('t', App.dash.f2, TEST_STATUS)}
+   <div class="row no-print" style="justify-content:space-between"><span class="small muted">${rows.length} of ${all.length} participants shown</span><div class="row"><button class="btn sec" data-exp="csv">Export CSV (Excel)</button><button class="btn sec" data-exp="xlsx">Download .xlsx</button></div></div>
+   <div class="tbl-wrap"><table class="wide"><thead><tr><th class="num">S.No.</th>${th('id', 'ID', s)}${th('name', 'Participant Name', s)}<th>Mobile</th>${th('school', 'School / Office', s)}${th('block', 'Block', s)}
+     ${th('preScore', 'Pre Score', s, 'num')}<th class="num">Pre Max</th>${th('prePct', 'Pre %', s, 'num')}${th('preAt', 'Pre Submitted', s)}${th('postScore', 'Post Score', s, 'num')}<th class="num">Post Max</th>${th('postPct', 'Post %', s, 'num')}${th('postAt', 'Post Submitted', s)}${th('diff', 'Improvement', s, 'num')}${th('status', 'Status', s)}</tr></thead><tbody>
+   ${rows.map((r, i) => `<tr><td class="num">${i + 1}</td><td>${esc(r.id)}</td><td><b>${esc(r.name)}</b></td><td>${esc(r.mobile) || '<span class="muted">—</span>'}</td><td>${esc(r.school)}</td><td>${esc(r.block)}</td>
+     ${r.pre ? `<td class="num"><b>${r.preScore}</b></td><td class="num">${MAX_MARKS}</td><td class="num">${r.prePct}%</td><td class="small">${esc(fmtDT(r.preAt))}</td>` : '<td colspan="4" class="muted small">Pre-Test not submitted</td>'}
+     ${r.post ? `<td class="num"><b>${r.postScore}</b></td><td class="num">${MAX_MARKS}</td><td class="num">${r.postPct}%</td><td class="small">${esc(fmtDT(r.postAt))}</td>` : '<td colspan="4" class="muted small">Post-Test not submitted</td>'}
+     <td class="num">${r.diff === '' ? '<span class="muted">—</span>' : `<b style="color:${r.diff > 0 ? 'var(--green)' : r.diff < 0 ? 'var(--red)' : 'inherit'}">${r.diff > 0 ? '+' : ''}${r.diff}</b>`}</td>
+     <td>${pill(r.pre && r.post ? 'present' : r.pre || r.post ? 'pending' : 'absent', r.status)}</td></tr>`).join('') || `<tr><td colspan="16" class="muted">No participant matches the filters.</td></tr>`}
+   </tbody></table></div>`;
+  const again = () => renderTestTable(P);
+  bindFilters(P, 't', App.dash.f2, again); bindSort(P, 'test', again);
+  $$('[data-exp]', P).forEach(b => b.onclick = () => exportTests(rows, b.dataset.exp));
+}
+
+/* Exports */
+function csvOf(aoa) { return '﻿' + aoa.map(r => r.map(v => { v = String(v ?? ''); if (/^[=+\-@]/.test(v)) v = "'" + v; return /[",\r\n]/.test(v) ? '"' + v.replace(/"/g, '""') + '"' : v; }).join(',')).join('\r\n'); }
+async function saveTable(base, fmt, sheets) {
+  if (fmt === 'csv') { saveBlob(base + '.csv', new Blob([csvOf(sheets[0][1])], { type: 'text/csv;charset=utf-8' })); return; }
+  try {
+    await loadScript(LIB.xlsx);
+    const X = window.XLSX, wb = X.utils.book_new();
+    sheets.forEach(([name, aoa]) => { const ws = X.utils.aoa_to_sheet(aoa); ws['!cols'] = aoa[0].map((h, i) => ({ wch: Math.min(48, Math.max(String(h).length + 2, ...aoa.slice(1, 60).map(r => String(r[i] ?? '').length + 1))) })); X.utils.book_append_sheet(wb, ws, name); });
+    saveBlob(base + '.xlsx', new Blob([X.write(wb, { bookType: 'xlsx', type: 'array' })], { type: FILE_TYPES.xlsx.mime }));
+  } catch (e) { toast('Excel download needs the internet to load its library. Use Export CSV instead.', 'err'); }
+}
+function fileSuffix(F) { return (F.block ? '_' + F.block.replace(/\s+/g, '') : '') + '_' + todayISO(); }
+function exportAtt(rows, fmt) {
+  const head = ['S.No.', 'Participant ID', 'Participant Name', 'Mobile', 'School / Office', 'Block'];
+  DAYS.forEach(d => head.push(`Day ${d.n} (${d.date}) Status`, `Day ${d.n} Check-in`, `Day ${d.n} Photo`));
+  head.push('Days Present', 'Attendance Status', 'Last Check-in', 'Remarks');
+  const aoa = [head].concat(rows.map((r, i) => {
+    const o = [i + 1, r.id, r.name, r.mobile, r.school, r.block];
+    r.days.forEach(x => o.push(STATUS_LABEL[x.st], x.at ? fmtDT(x.at) : '', x.photo ? 'Yes (private)' : 'No'));
+    o.push(r.present, r.overall, r.last ? fmtDT(r.last) : '', r.remarks);
+    return o;
+  }));
+  saveTable('NMMS_Attendance_Details' + fileSuffix(App.dash.f1), fmt, [['Attendance Details', aoa]]);
+}
+function exportTests(rows, fmt) {
+  const head = ['S.No.', 'Participant ID', 'Participant Name', 'Mobile', 'School / Office', 'Block', 'Pre-Test Score', 'Pre-Test Max', 'Pre-Test %', 'Pre-Test Submitted', 'Post-Test Score', 'Post-Test Max', 'Post-Test %', 'Post-Test Submitted', 'Improvement (Post − Pre)', 'Status'];
+  const aoa = [head].concat(rows.map((r, i) => [i + 1, r.id, r.name, r.mobile, r.school, r.block, r.preScore, r.pre ? MAX_MARKS : '', r.prePct, r.preAt ? fmtDT(r.preAt) : '', r.postScore, r.post ? MAX_MARKS : '', r.postPct, r.postAt ? fmtDT(r.postAt) : '', r.diff, r.status]));
+  const qwise = type => [['Participant ID', 'Participant Name', 'Block'].concat(QUESTIONS.map(q => `Q${q.n} (${q.m})`), ['Total /20', 'Submitted'])]
+    .concat(rows.filter(r => r[type]).map(r => [r.id, r.name, r.block].concat(r[type].marks, [r[type].total, fmtDT(r[type].at)])));
+  saveTable('NMMS_PrePost_Test_Details' + fileSuffix(App.dash.f2), fmt, [['Pre & Post Details', aoa], ['Pre-Test Q-wise', qwise('pre')], ['Post-Test Q-wise', qwise('post')]]);
+}
+
+/* Shared admin modals */
+async function photoModal(b, key) {
+  b.disabled = true;
+  try { const j = await api('photo', { key }); showModal(`<h2>Attendance photo</h2><p class="muted small" style="margin:0">${esc(key)} · private, visible only after unlocking</p><img src="${safeImg(j.photo)}" alt="Attendance photo" style="width:100%;max-width:360px;border-radius:10px;justify-self:center"><button class="btn sec" data-close>Close</button>`); }
+  catch (e) { toast(e.message, 'err'); }
+  b.disabled = false;
+}
+function correctModal(pid, dn) {
+  const p = S.pmap[pid];
+  showModal(`<h2>Correct attendance</h2><p><b>${esc(p.name)}</b> · ${DAYS[dn - 1].label} (${DAYS[dn - 1].long})<br><span class="muted small">Current status: ${esc(STATUS_LABEL[attStatus(pid, dn)])}</span></p>
+    <form id="cf" style="display:grid;gap:10px"><div class="field"><label for="cs">New status</label><select class="input" id="cs"><option value="present">Present</option><option value="absent">Absent</option></select></div>
+    <div class="field"><label for="cr">Reason (saved in Remarks and the audit log)</label><textarea class="input" id="cr" maxlength="300" required></textarea></div><div id="cErr"></div>
+    <div class="row"><button class="btn" id="cGo">Save correction</button><button type="button" class="btn sec" data-close>Cancel</button></div></form>`, box => {
+    $('#cf', box).onsubmit = async e => {
+      e.preventDefault(); $('#cGo').disabled = true;
+      try { await api('correctAttendance', { pid, day: dn, status: $('#cs').value, reason: $('#cr').value }); closeModal(); toast('Correction saved'); await Promise.all([loadPublic(), loadAdmin()]); }
+      catch (err) { $('#cErr').innerHTML = `<div class="notice err">${esc(err.message)}</div>`; $('#cGo').disabled = false; }
+    };
+  });
+}
+
+VIEWS.dashboard = { render(m) {
+  if (!adminGate(m)) return;
+  const D = App.dash, parts = S.participants, N = parts.length, td = todayDay();
+  const pres = d => parts.filter(p => attStatus(p.id, d) === 'present').length;
+  const elapsed = DAYS.filter(d => d.date <= todayISO()).map(d => d.n);
+  const presTotal = elapsed.reduce((s, d) => s + pres(d), 0), possible = N * elapsed.length;
+  const pre = parts.map(p => S.admin.pre[p.id]).filter(Boolean), post = parts.map(p => S.admin.post[p.id]).filter(Boolean);
+  const avg = a => a.length ? (a.reduce((s, t) => s + t.total, 0) / a.length).toFixed(1) : '—';
+  const both = parts.filter(p => S.admin.pre[p.id] && S.admin.post[p.id]);
+  const imp = both.length ? (both.reduce((s, p) => s + S.admin.post[p.id].total - S.admin.pre[p.id].total, 0) / both.length) : null;
+  const k = (l, v, s, c) => `<div class="kpi ${c || ''}"><span>${l}</span><b>${v}</b>${s ? `<small>${s}</small>` : ''}</div>`;
+  const tabs = [['att', 'Attendance Details'], ['test', 'Pre-Test & Post-Test Details'], ['timetable', 'Timetable Editor'], ['settings', 'Settings & Audit Log']];
+  if (!tabs.some(t => t[0] === D.tab)) D.tab = 'att';
+  m.innerHTML = `<div class="page-head"><div><h1>Admin Dashboard</h1><p>Last updated ${App.adminLoadedAt ? esc(fmtT(App.adminLoadedAt.toISOString())) : ''}</p></div>
+   <div class="row no-print"><button class="btn sec" id="dRefresh">Refresh</button></div></div>
+  <div class="kpis">
+    ${k('Registered participants', N, 'approved list')}
+    ${k('Attendance today', td ? pres(td) : '—', td ? DAYS[td - 1].label + ' · ' + (N ? Math.round(pres(td) * 100 / N) : 0) + '%' : 'Not a training day')}
+    ${k('Attendance by day', DAYS.map(d => pres(d.n)).join(' · '), 'Day 1 · Day 2 · Day 3')}
+    ${k('Attendance %', possible ? Math.round(presTotal * 100 / possible) + '%' : '—', possible ? `${presTotal} of ${possible} participant-days so far` : 'No training day has started')}
+    ${k('Pre-Test submitted', pre.length, (N - pre.length) + ' pending')}
+    ${k('Pre-Test average', avg(pre) + (pre.length ? '<small style="font-size:.9rem">/20</small>' : ''), pre.length ? 'submitted only' : 'No submissions yet')}
+    ${k('Post-Test submitted', post.length, (N - post.length) + ' pending')}
+    ${k('Post-Test average', avg(post) + (post.length ? '<small style="font-size:.9rem">/20</small>' : ''), post.length ? 'submitted only' : 'No submissions yet')}
+    ${k('Both tests completed', both.length, 'of ' + N)}
+    ${k('Average improvement', imp === null ? '—' : (imp >= 0 ? '+' : '') + imp.toFixed(1), imp === null ? 'Needs both tests' : 'marks (Post − Pre)', imp > 0 ? 'good' : '')}
+  </div>
+  <div class="subtabs no-print" role="tablist">${tabs.map(([id, l]) => `<button role="tab" data-tab="${id}" aria-selected="${D.tab === id}">${l}</button>`).join('')}</div>
+  <section id="dPanel" style="display:grid;gap:12px"></section>`;
+  $('#dRefresh').onclick = async () => { $('#dRefresh').disabled = true; try { await Promise.all([loadPublic(), loadAdmin()]); toast('Updated'); } catch (e) { toast(e.message, 'err'); } };
+  $$('[data-tab]', m).forEach(b => b.onclick = () => { D.tab = b.dataset.tab; this.render(m); });
+  const P = $('#dPanel');
+  if (D.tab === 'att') renderAttTable(P);
+  else if (D.tab === 'test') renderTestTable(P);
+  else if (D.tab === 'timetable') renderTTEditor(P);
+  else renderSettings(P);
+}, live: true };
+
+function renderTTEditor(P) {
+  const D = App.dash;
+  if (!D.ttRows) D.ttRows = JSON.parse(JSON.stringify(ttFor(D.ttDay)));
+  const rows = D.ttRows;
+  P.innerHTML = `<div class="row" style="justify-content:space-between"><h2>Timetable Editor</h2><div class="seg">${DAYS.map(d => `<button data-ttd="${d.n}" aria-pressed="${d.n === D.ttDay}">${d.label}<small>${d.long}</small></button>`).join('')}</div></div>
+   <p class="muted small" style="margin:0">Times are in 24-hour format. Leave End empty for an open-ended item (for example the 4:30 tea break). Tick TBC only when the time is not yet confirmed.</p>
+   <div class="tbl-wrap"><table class="wide tt-edit"><thead><tr><th>#</th><th>Start</th><th>End</th><th>Topic</th><th>TBC</th><th></th></tr></thead><tbody>
+   ${rows.map((x, i) => `<tr data-i="${i}"><td>${i + 1}</td><td><input class="input" type="time" data-f="start" value="${esc(x.start)}" aria-label="Start time"></td><td><input class="input" type="time" data-f="end" value="${esc(x.end)}" aria-label="End time"></td><td><input class="input" data-f="topic" value="${esc(x.topic)}" style="min-width:220px" aria-label="Topic"></td><td><input type="checkbox" data-f="tbc" ${x.tbc ? 'checked' : ''} aria-label="Time to be confirmed" style="width:20px;height:20px"></td>
+     <td style="white-space:nowrap"><button class="btn sm sec" data-mv="-1" aria-label="Move up">↑</button> <button class="btn sm sec" data-mv="1" aria-label="Move down">↓</button> <button class="btn sm sec" data-del aria-label="Delete row">✕</button></td></tr>`).join('')}
+   </tbody></table></div>
+   <div class="row"><button class="btn sec" id="ttAdd">Add session</button><button class="btn" id="ttSave">Save ${DAYS[D.ttDay - 1].label}</button><button class="btn sec" id="ttReset">Reload saved version</button></div>`;
+  $$('[data-ttd]', P).forEach(b => b.onclick = () => { D.ttDay = +b.dataset.ttd; D.ttRows = null; renderTTEditor(P); });
+  P.querySelector('tbody').addEventListener('input', e => { const t = e.target, i = +t.closest('tr').dataset.i; rows[i][t.dataset.f] = t.type === 'checkbox' ? t.checked : t.value; });
+  P.querySelector('tbody').addEventListener('change', e => { const t = e.target, i = +t.closest('tr').dataset.i; rows[i][t.dataset.f] = t.type === 'checkbox' ? t.checked : t.value; });
+  $$('[data-mv]', P).forEach(b => b.onclick = () => { const i = +b.closest('tr').dataset.i, j = i + +b.dataset.mv; if (j < 0 || j >= rows.length) return; [rows[i], rows[j]] = [rows[j], rows[i]]; renderTTEditor(P); });
+  $$('[data-del]', P).forEach(b => b.onclick = () => { rows.splice(+b.closest('tr').dataset.i, 1); renderTTEditor(P); });
+  $('#ttAdd').onclick = () => { rows.push(r('New session')); renderTTEditor(P); };
+  $('#ttReset').onclick = () => { D.ttRows = null; renderTTEditor(P); };
+  $('#ttSave').onclick = async () => {
+    if (rows.some(x => !x.topic.trim())) { toast('Every session needs a topic.', 'err'); return; }
+    $('#ttSave').disabled = true;
+    try { await api('saveTimetable', { day: D.ttDay, rows }); toast(DAYS[D.ttDay - 1].label + ' timetable saved'); D.ttRows = null; await loadPublic(); }
+    catch (e) { toast(e.message, 'err'); $('#ttSave').disabled = false; }
+  };
+}
+function renderSettings(P) {
+  const st = S.admin.settings || {};
+  P.innerHTML = `<div class="grid2"><form class="card" id="sf" style="display:grid;gap:12px"><h2>Assessment settings</h2>
+     <div class="fgrid"><div class="field"><label for="sPreO">Pre-Test</label><select class="input" id="sPreO"><option value="yes">Open</option><option value="no" ${st.preOpen === 'no' ? 'selected' : ''}>Closed</option></select></div>
+     <div class="field"><label for="sPostO">Post-Test</label><select class="input" id="sPostO"><option value="yes">Open</option><option value="no" ${st.postOpen === 'no' ? 'selected' : ''}>Closed</option></select></div></div>
+     <div class="field"><label for="sPreU">Optional DIET Google Form link — Pre-Test</label><input class="input" id="sPreU" type="url" placeholder="https://forms.gle/…" value="${esc(st.preFormUrl || '')}"></div>
+     <div class="field"><label for="sPostU">Optional DIET Google Form link — Post-Test</label><input class="input" id="sPostU" type="url" placeholder="https://forms.gle/…" value="${esc(st.postFormUrl || '')}"></div>
+     <div id="sErr"></div><div><button class="btn" id="sSave">Save settings</button></div></form>
+   <div class="card" style="display:grid;gap:10px"><h2>Audit log</h2><p class="muted small" style="margin:0">Latest 300 administrative events (logins, corrections, edits, uploads).</p>
+     <div class="tbl-wrap" style="max-height:420px;overflow:auto"><table><thead><tr><th>Time</th><th>Action</th><th>Target</th><th>Details</th></tr></thead><tbody>${(S.admin.audit || []).map(a => `<tr><td style="white-space:nowrap">${esc(fmtDT(a.at))}</td><td>${esc(a.action)}</td><td>${esc(a.target)}</td><td class="small">${esc(a.details)}</td></tr>`).join('') || '<tr><td colspan="4" class="muted">No events yet.</td></tr>'}</tbody></table></div></div></div>`;
+  $('#sf').onsubmit = async e => {
+    e.preventDefault(); $('#sSave').disabled = true;
+    try { await api('saveSettings', { settings: { preOpen: $('#sPreO').value, postOpen: $('#sPostO').value, preFormUrl: $('#sPreU').value.trim(), postFormUrl: $('#sPostU').value.trim() } }); toast('Settings saved'); await Promise.all([loadPublic(), loadAdmin()]); }
+    catch (err) { $('#sErr').innerHTML = `<div class="notice err">${esc(err.message)}</div>`; $('#sSave').disabled = false; }
+  };
+}
+
+/* ---------- Import Documents ---------- */
+VIEWS.import = { live: true, render(m) {
+  if (!adminGate(m)) return;
+  const I = App.imp, all = (S.admin.materials || []).slice().sort((a, b) => a.day - b.day || String(a.topic).localeCompare(String(b.topic)) || a.order - b.order);
+  const defTopic = I.topic || (TOPIC_MAP[App.matTopic] ? App.matTopic : MAT_DAYS[(todayDay() || 1) - 1].topics[0].id);
+  m.innerHTML = `<div class="page-head"><div><h1>Import Documents</h1><p>Batch upload into the day-wise topic folders · PDF, DOC/DOCX, PPT/PPTX, XLS/XLSX, JPG, PNG, WebP (10 MB) · MP4, WebM (25 MB)</p></div><a class="btn sec" href="#materials">Open Training Materials</a></div>
+  <div class="card" style="display:grid;gap:12px">
+    <div class="field" style="max-width:420px"><label for="impTopic">Default folder for new files</label><select class="input" id="impTopic">${topicOptions(defTopic)}</select></div>
+    <div class="drop" id="drop"><p style="margin:0 0 10px"><b>Drag files here</b> or choose them (several at once is fine)</p><button class="btn" id="pick">Choose files</button><input type="file" id="files" multiple hidden accept="${ACCEPT}"></div>
+    ${I.queue.length ? `<div class="tbl-wrap"><table class="wide"><thead><tr><th>File</th><th>Title</th><th>Description</th><th>Folder</th><th>Order</th><th>Publish</th><th></th></tr></thead><tbody>
+      ${I.queue.map((q, i) => `<tr data-q="${i}"><td><b>${esc(q.file.name)}</b><br><span class="small muted">${fmtSize(q.file.size)}</span>${q.err ? `<div class="small" style="color:var(--red)">${esc(q.err)}</div>` : ''}</td>
+        <td><input class="input" data-f="title" value="${esc(q.title)}" style="min-width:180px" aria-label="Title"></td><td><input class="input" data-f="description" value="${esc(q.description)}" aria-label="Description"></td>
+        <td><select class="input" data-f="topic" aria-label="Folder" style="min-width:220px">${topicOptions(q.topic)}</select></td>
+        <td><input class="input" type="number" min="0" max="999" data-f="order" value="${q.order}" style="width:80px" aria-label="Display order"></td>
+        <td><input type="checkbox" data-f="published" ${q.published ? 'checked' : ''} style="width:20px;height:20px" aria-label="Publish"></td>
+        <td style="white-space:nowrap">${q.err ? '' : `<button class="btn sm sec" data-prev="${i}">Preview</button>`} <button class="btn sm sec" data-rm="${i}">Remove</button></td></tr>`).join('')}</tbody></table></div>
+      <div class="row"><button class="btn green" id="upAll" ${I.busy || !I.queue.some(q => !q.err) ? 'disabled' : ''}>${I.busy ? '<span class="spin"></span> ' + esc(I.busy) : 'Upload ' + I.queue.filter(q => !q.err).length + ' file(s)'}</button><button class="btn sec" id="clrQ" ${I.busy ? 'disabled' : ''}>Clear list</button></div>` : ''}
+  </div>
+  <h2>All uploaded resources</h2>
+  ${all.length ? `<div class="tbl-wrap"><table class="wide"><thead><tr><th>Day</th><th>Folder</th><th>Order</th><th>Title</th><th>Type</th><th>Status</th><th>Actions</th></tr></thead><tbody>
+   ${all.map(x => `<tr><td>${DAYS[x.day - 1] ? DAYS[x.day - 1].label : esc(x.day)}</td><td class="small"><a href="#materials/${esc(x.topic)}">${esc((TOPIC_MAP[x.topic] || {}).t || 'No folder')}</a></td><td class="num">${x.order}</td><td><b>${esc(x.title)}</b>${x.description ? `<br><span class="small muted">${esc(x.description)}</span>` : ''}</td>
+     <td class="small">${x.kind === 'link' ? 'Link' : `${esc(matType(x))}<br>${fmtSize(x.size)}`}</td><td>${x.published ? pill('present', 'Published') : pill('neutral', 'Draft')}</td>
+     <td style="white-space:nowrap">${x.kind === 'link' ? `<a class="btn sm sec" href="${esc(x.url)}" target="_blank" rel="noopener noreferrer external">Open ↗</a>` : `<button class="btn sm sec" data-mview="${esc(x.id)}">Preview</button> <button class="btn sm saff" data-mpres="${esc(x.id)}">Present on Digital Board</button>`} <button class="btn sm sec" data-medit="${esc(x.id)}">Edit</button> ${x.kind === 'link' ? '' : `<button class="btn sm sec" data-mrep="${esc(x.id)}">Replace</button>`} <button class="btn sm danger" data-mdel="${esc(x.id)}">Delete</button></td></tr>`).join('')}</tbody></table></div>`
+    : '<div class="empty">No materials uploaded yet. Choose files above to add the first one.</div>'}
+  <input type="file" id="repFile" hidden accept="${ACCEPT}">`;
+  $('#impTopic').onchange = e => { I.topic = e.target.value; };
+  const add = files => {
+    const topic = $('#impTopic').value; I.topic = topic;
+    const base = topicItems(topic).reduce((mx, y) => Math.max(mx, y.order), 0);
+    [...files].forEach((f, i) => I.queue.push({ file: f, title: f.name.replace(/\.[^.]+$/, '').replace(/[_-]+/g, ' '), description: '', topic, order: base + (i + 1) * 10, published: true, err: checkLocalFile(f) }));
+    this.render(m);
+  };
+  $('#pick').onclick = () => $('#files').click();
+  $('#files').onchange = e => { add(e.target.files); };
+  const dz = $('#drop');
+  dz.ondragover = e => { e.preventDefault(); dz.classList.add('over'); };
+  dz.ondragleave = () => dz.classList.remove('over');
+  dz.ondrop = e => { e.preventDefault(); dz.classList.remove('over'); add(e.dataTransfer.files); };
+  const upd = (tr, t) => { const q = I.queue[+tr.dataset.q]; if (!t.dataset.f) return; q[t.dataset.f] = t.type === 'checkbox' ? t.checked : t.dataset.f === 'order' ? +t.value : t.value; };
+  $$('tr[data-q]', m).forEach(tr => { tr.addEventListener('input', e => upd(tr, e.target)); tr.addEventListener('change', e => upd(tr, e.target)); });
+  $$('[data-rm]', m).forEach(b => b.onclick = () => { I.queue.splice(+b.dataset.rm, 1); this.render(m); });
+  $$('[data-prev]', m).forEach(b => b.onclick = () => { const q = I.queue[+b.dataset.prev]; openViewer({ id: 'local', name: q.file.name, title: q.title + ' (preview)', localFile: q.file }, false); });
+  const clr = $('#clrQ'); if (clr) clr.onclick = () => { I.queue = []; this.render(m); };
+  const up = $('#upAll');
+  if (up) up.onclick = async () => {
+    const items = I.queue.filter(q => !q.err);
+    I.busy = 'Uploading…'; this.render(m);
+    await uploadBatch(items, msg => { I.busy = msg; const b = $('#upAll'); if (b && msg) b.innerHTML = '<span class="spin"></span> ' + esc(msg); });
+    I.busy = ''; I.queue = I.queue.filter(q => !q.done);
+    this.render(m);
+  };
+  const find = id => all.find(x => x.id === id);
+  $$('[data-mview]', m).forEach(b => b.onclick = () => openViewer(find(b.dataset.mview), false));
+  $$('[data-mpres]', m).forEach(b => b.onclick = () => presentResource(find(b.dataset.mpres)));
+  $$('[data-medit]', m).forEach(b => b.onclick = () => { const x = find(b.dataset.medit); x.kind === 'link' ? linkModal(x.topic, x) : editMaterialModal(x); });
+  $$('[data-mrep]', m).forEach(b => b.onclick = () => replaceMaterialFlow(find(b.dataset.mrep)));
+  $$('[data-mdel]', m).forEach(b => b.onclick = () => deleteMaterialModal(find(b.dataset.mdel)));
+} };
+
+/* =================== Boot =================== */
+let scale = store.get('nmms26_scale', 1);
+const applyScale = () => { document.documentElement.style.setProperty('--scale', scale); store.set('nmms26_scale', scale); };
+$('#fUp').onclick = () => { scale = Math.min(1.8, +(scale + 0.1).toFixed(2)); applyScale(); };
+$('#fDown').onclick = () => { scale = Math.max(0.8, +(scale - 0.1).toFixed(2)); applyScale(); };
+applyScale();
+$('#boardBtn').onclick = presentBanner;
+route();
+(async () => {
+  await loadPublic();
+  if (App.token) { try { await loadAdmin(); } catch (e) { App.token = null; store.sset('nmms26_tok', null); } }
+  flushOutbox();
+})();
+setInterval(() => { if (!document.hidden && CFG.GAS_URL && !['attendance', 'pre-test', 'post-test'].includes(App.route)) loadPublic(); }, 60000);
+</script>
+</body>
+</html>
