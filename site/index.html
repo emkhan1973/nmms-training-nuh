@@ -827,28 +827,34 @@ VIEWS.attendance = { render(m) {
      <div class="cam" id="cam">${safeImg(A.photo) ? `<img src="${A.photo}" alt="Photo preview">` : `<video id="vid" playsinline muted hidden></video><div class="ring" id="ring" hidden></div><div class="ph" id="ph"><div style="font-size:2.2rem" aria-hidden="true">📷</div><div>Open the camera or upload a photo</div></div>`}</div>
      <div class="row" id="camBtns"></div>
      <div id="camMsg" style="width:100%"></div>
-     <input type="file" id="fCap" accept="image/*" capture="user" hidden><input type="file" id="fUp" accept="image/*" hidden>
+     <input type="file" id="attCamFile" accept="image/*" capture="user" hidden aria-hidden="true" tabindex="-1">
+     <input type="file" id="attUpFile" accept="image/jpeg,image/png,image/webp,.jpg,.jpeg,.png,.webp" hidden aria-hidden="true" tabindex="-1">
      <button class="btn green lg" id="aConfirm" style="width:100%" ${A.photo && A.consent && !A.busy ? '' : 'disabled'}>${A.busy ? '<span class="spin"></span> Saving…' : 'Confirm attendance · उपस्थिति दर्ज करें'}</button>
    </div>` : ''}</div>`;
   $('#aChange').onclick = () => { stopCam(); Object.assign(A, { step: 'select', pid: null, photo: null }); VIEWS.attendance.render(m); };
   if (already !== 'pending') return;
   $('#aConsent').onchange = e => { A.consent = e.target.checked; $('#aConfirm').disabled = !(A.photo && A.consent); };
-  const btns = $('#camBtns');
+  const btns = $('#camBtns', m);
+  // The two file inputs are looked up inside this view only. (Root cause of the earlier bug: the upload input
+  // shared the id "fUp" with the header's A+ button, so "Upload Photo" clicked A+ instead of opening the picker.)
+  const camInput = $('#attCamFile', m), upInput = $('#attUpFile', m);
+  const pickFile = () => { msg(''); upInput.value = ''; upInput.click(); };
   const setBtns = live => {
-    btns.innerHTML = A.photo ? `<button class="btn sec" id="cRetake">Retake</button><button class="btn sec" id="cReplace">Replace with upload</button>`
-      : live ? `<button class="btn saff lg" id="cSnap">Capture photo</button><button class="btn sec" id="cStop">Cancel</button>`
-        : `<button class="btn saff lg" id="cOpen">Open Camera</button><button class="btn sec" id="cUpload">Upload Photo</button>`;
-    const on = (id, f) => { const b = $('#' + id); if (b) b.onclick = f; };
-    on('cOpen', openCamera); on('cUpload', () => $('#fUp').click()); on('cSnap', snap);
+    btns.innerHTML = A.photo ? `<button type="button" class="btn sec" id="cRetake">Retake with camera</button><button type="button" class="btn sec" id="cReplace">Replace with upload</button><button type="button" class="btn sec" id="cRemove">Remove photo</button>`
+      : live ? `<button type="button" class="btn saff lg" id="cSnap">Capture photo</button><button type="button" class="btn sec" id="cStop">Cancel</button><button type="button" class="btn sec" id="cUpload">Upload Photo</button>`
+        : `<button type="button" class="btn saff lg" id="cOpen">Open Camera</button><button type="button" class="btn sec" id="cUpload">Upload Photo</button>`;
+    const on = (id, f) => { const b = $('#' + id, btns); if (b) b.onclick = f; };
+    on('cOpen', openCamera); on('cUpload', () => { stopCam(); pickFile(); }); on('cSnap', snap);
     on('cStop', () => { stopCam(); setBtns(false); $('#vid').hidden = true; $('#ring').hidden = true; $('#ph').hidden = false; });
     on('cRetake', () => { A.photo = null; VIEWS.attendance.render(m); setTimeout(openCamera, 0); });
-    on('cReplace', () => $('#fUp').click());
+    on('cReplace', pickFile);
+    on('cRemove', () => { A.photo = null; VIEWS.attendance.render(m); });
   };
   const msg = (t, k) => { $('#camMsg').innerHTML = t ? `<div class="notice ${k || 'warn'}">${t}</div>` : ''; };
   async function openCamera() {
     msg('');
     const canLive = window.isSecureContext && navigator.mediaDevices && navigator.mediaDevices.getUserMedia;
-    if (!canLive) { $('#fCap').click(); return; }
+    if (!canLive) { camInput.value = ''; camInput.click(); return; }
     try {
       stopCam();
       camStream = await navigator.mediaDevices.getUserMedia({ video: { facingMode: 'user', width: { ideal: 720 }, height: { ideal: 720 } }, audio: false });
@@ -871,16 +877,25 @@ VIEWS.attendance = { render(m) {
   }
   function setPhoto(p) { A.photo = p; stopCam(); VIEWS.attendance.render(m); }
   function snap() { const v = $('#vid'); if (!v || !v.videoWidth) { msg('The camera is not ready yet. Wait a second and try again.'); return; } setPhoto(crop(v, v.videoWidth, v.videoHeight)); }
-  const onFile = e => {
-    const f = e.target.files[0]; e.target.value = '';
-    if (!f) return;
-    if (!/^image\//.test(f.type) && !/\.(jpe?g|png|webp|heic|heif)$/i.test(f.name)) { msg('Please choose a photo (JPG or PNG).', 'err'); return; }
+  const MAX_PHOTO_FILE = 15 * 1024 * 1024;
+  const onFile = (e, fromCamera) => {
+    const f = e.target.files && e.target.files[0];
+    if (!f) return; // picker cancelled: keep whatever photo was there
+    const okType = /^image\/(jpeg|png|webp)$/.test(f.type) || (!f.type && /\.(jpe?g|png|webp)$/i.test(f.name)) || (fromCamera && /^image\//.test(f.type));
+    if (!okType) { msg(`“${esc(f.name)}” is not a JPG, PNG or WebP photo. Please choose a JPG, PNG or WebP image.`, 'err'); e.target.value = ''; return; }
+    if (f.size > MAX_PHOTO_FILE) { msg(`This photo is too large (${fmtSize(f.size)}). Please choose a photo under 15 MB.`, 'err'); e.target.value = ''; return; }
+    msg('Reading photo…', 'info');
     const url = URL.createObjectURL(f), img = new Image();
-    img.onload = () => { setPhoto(crop(img, img.naturalWidth, img.naturalHeight)); URL.revokeObjectURL(url); };
-    img.onerror = () => { URL.revokeObjectURL(url); msg('This photo format cannot be opened in the browser. Please take a new photo or choose a JPG/PNG.', 'err'); };
+    img.onload = () => {
+      URL.revokeObjectURL(url);
+      try { setPhoto(crop(img, img.naturalWidth, img.naturalHeight)); }
+      catch (err) { msg('This photo could not be processed. Please choose another photo.', 'err'); }
+    };
+    img.onerror = () => { URL.revokeObjectURL(url); msg('This photo cannot be opened (the file may be damaged). Please choose another JPG, PNG or WebP photo.', 'err'); };
     img.src = url;
+    e.target.value = '';
   };
-  $('#fCap').onchange = onFile; $('#fUp').onchange = onFile;
+  camInput.onchange = e => onFile(e, true); upInput.onchange = e => onFile(e, false);
   setBtns(!!camStream);
   if (camStream && $('#vid')) { const v = $('#vid'); v.srcObject = camStream; v.hidden = false; $('#ring').hidden = false; $('#ph').hidden = true; v.play().catch(() => {}); }
   $('#aConfirm').onclick = async () => {
